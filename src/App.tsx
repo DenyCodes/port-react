@@ -7,6 +7,8 @@ import Sobre from './containers/Sobre'
 import Projetos from './containers/Projetos'
 import temaLight from './themes/light'
 import temaDark from './themes/dark'
+import Header from './containers/Header'
+import Footer from './containers/Footer'
 
 function App() {
   const [estaUsandoTemaDark, setEstaUsandoTemaDark] = useState(true)
@@ -16,14 +18,16 @@ function App() {
   }
   return (
     <ThemeProvider theme={estaUsandoTemaDark ? temaDark : temaLight}>
+      <Header />
       <EstiloGlobal />
       <Container>
         <Sidebar trocaTema={trocaTema} />
         <main>
           <Sobre />
-          <Projetos />
+          <Projetos nomeUsuario={'denycodes'} />
         </main>
       </Container>
+      <Footer />
     </ThemeProvider>
   )
 }

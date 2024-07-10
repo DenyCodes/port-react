@@ -1,6 +1,8 @@
 import styled from 'styled-components'
 
 export const GithubSecao = styled.div`
+  padding: 20px;
+  background-color: ${(props) => props.theme.corDeFundoBotao};
   margin-top: 32px;
   margin-bottom: 64px;
 
@@ -12,4 +14,9 @@ export const GithubSecao = styled.div`
       width: 100%;
     }
   }
+`
+export const SecSobre = styled.section`
+  border-radius: 5px;
+  padding: 20px;
+  background-color: ${(props) => props.theme.corPerfil};
 `

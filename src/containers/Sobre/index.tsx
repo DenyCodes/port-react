@@ -1,21 +1,22 @@
 import Titulo from '../../components/Titulo'
 import Paragrafo from '../../components/Paragrafo'
-import { GithubSecao } from './styles'
+import { GithubSecao, SecSobre } from './styles'
 
 const Sobre = () => (
-  <section>
+  <SecSobre>
     <Titulo fontSize={16}>Sobre mim</Titulo>
     <Paragrafo tipo="principal">
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae
-      dolore assumenda laudantium accusamus repudiandae unde ab? Deserunt
-      delectus officiis magnam nam qui quam, iusto placeat, quae, doloribus cum
-      esse eum!
+      Domínio de HTML, Python, JavaScript, CSS e layouts Front-end ● Criação de
+      microsserviços ● Automatização de fluxos de trabalho ● Integração Front e
+      Back-end ● Desenvolvimento e testes com Django, Postgres e APIs ●
+      Implantação de softwares com abordagem DevOps ● Experiência com SQL e
+      bancos de dados
     </Paragrafo>
     <GithubSecao>
       <img src="https://github-readme-stats.vercel.app/api?username=DenyCodes&show_icons=true&theme=dracula&include_all_commits=true&count_private=false" />
       <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=DenyCodes&layout=compact&langs_count=7&theme=dracula" />
     </GithubSecao>
-  </section>
+  </SecSobre>
 )
 
 export default Sobre

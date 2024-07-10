@@ -6,6 +6,7 @@ export const Descricao = styled(P)`
   margin-bottom: 40px;
 `
 export const BotaoTema = styled.button`
+  margin-top: 20px;
   border-radius: 12px;
   padding: 8px;
   color: ${(props) => props.theme.corDeFundo};
@@ -15,12 +16,20 @@ export const BotaoTema = styled.button`
   cursor: pointer;
 `
 export const Sidebarcontainer = styled.div`
+  margin-left: -100px;
+  background-color: ${(props) => props.theme.corPerfil};
+  width: 150px;
+  padding: 20px;
+
+  border-radius: 10px;
   position: sticky;
   top: 80px;
-  left: 0;
 
   @media (max-width: 768px) {
     margin-bottom: 40px;
     text-align: center;
   }
+`
+export const IconImg = styled.img`
+  width: 25px;
 `
