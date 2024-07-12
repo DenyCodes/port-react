@@ -1,6 +1,6 @@
 const temaLight = {
-  corPrincipal: '#000',
-  corSecundaria: '#949494',
+  corPrincipal: '#fff',
+  corSecundaria: '#4B5563',
   corDeFundo: '#C1CDCD',
   corDeFundoBotao: '#E0EEEE',
   corDaBorda: '#c1c1c1',

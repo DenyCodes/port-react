@@ -9,6 +9,10 @@ import temaLight from './themes/light'
 import temaDark from './themes/dark'
 import Header from './containers/Header'
 import Footer from './containers/Footer'
+import Hero from './containers/Hero'
+import Skill from './containers/Skill'
+import Projects from './containers/Projects'
+import Avaliacao from './containers/Avaliacao'
 
 function App() {
   const [estaUsandoTemaDark, setEstaUsandoTemaDark] = useState(true)
@@ -18,15 +22,13 @@ function App() {
   }
   return (
     <ThemeProvider theme={estaUsandoTemaDark ? temaDark : temaLight}>
-      <Header />
       <EstiloGlobal />
-      <Container>
-        <Sidebar trocaTema={trocaTema} />
-        <main>
-          <Sobre />
-          <Projetos nomeUsuario={'denycodes'} />
-        </main>
-      </Container>
+      <Header />
+      <Hero />
+      <Sobre />
+      <Skill />
+      <Projects />
+      <Avaliacao />
       <Footer />
     </ThemeProvider>
   )
