@@ -21,9 +21,9 @@ function App() {
     setEstaUsandoTemaDark(!estaUsandoTemaDark)
   }
   return (
-    <ThemeProvider theme={estaUsandoTemaDark ? temaDark : temaLight}>
+    <ThemeProvider theme={estaUsandoTemaDark ? temaLight : temaDark}>
       <EstiloGlobal />
-      <Header />
+      <Header trocaTema={trocaTema} />
       <Hero />
       <Sobre />
       <Skill />

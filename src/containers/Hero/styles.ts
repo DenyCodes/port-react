@@ -6,7 +6,8 @@ export const Container = styled.div`
   justify-content: space-between;
   align-items: flex-start;
   align-self: stretch;
-  background: var(--Gray-Default, #fff);
+  background: ${(props) => props.theme.corPrincipal};
+  color: ${(props) => props.theme.corSecundaria};
 `
 export const Sobre = styled.div`
   display: flex;
@@ -16,6 +17,9 @@ export const Sobre = styled.div`
   align-items: flex-start;
   gap: 48px;
   align-self: stretch;
+  h1 {
+    color: ${(props) => props.theme.corDeFundoBotao};
+  }
 `
 export const Pic = styled.img`
   height: 320px;

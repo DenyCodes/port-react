@@ -6,7 +6,8 @@ export const About = styled.div`
   justify-content: space-between;
   align-items: flex-start;
   align-self: stretch;
-  background: var(--Gray-50, #f9fafb);
+  background: ${(props) => props.theme.corFundoSobre};
+  color: ${(props) => props.theme.corSecundaria};
 `
 export const Me = styled.div`
   display: flex;
@@ -14,7 +15,8 @@ export const Me = styled.div`
   justify-content: center;
   align-items: center;
   border-radius: 12px;
-  background: var(--Gray-200, #e5e7eb);
+  background: ${(props) => props.theme.corDaBorda};
+  color: ${(props) => props.theme.corDeFundoBotao};
 `
 export const Curious = styled.div`
   width: 50px;

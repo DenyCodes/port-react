@@ -33,11 +33,11 @@ export const BottonCV = styled.div`
   align-items: center;
   gap: 8px;
   border-radius: 12px;
-  background: var(--Gray-900, #111827);
+  background: ${(props) => props.theme.corDeFundoBotao};
   a {
     inline-size: max-content;
     text-decoration: none;
-    color: ${(props) => props.theme.corSecundaria};
+    color: ${(props) => props.theme.corBotao};
   }
 `
 export const Banner = styled.img`

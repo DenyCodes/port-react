@@ -1,11 +1,13 @@
 const temaLight = {
   corPrincipal: '#fff',
   corSecundaria: '#4B5563',
-  corDeFundo: '#C1CDCD',
-  corDeFundoBotao: '#E0EEEE',
+  corDeFundo: '#282a35',
+  corDeFundoBotao: '#0d1117',
   corDaBorda: '#c1c1c1',
-  corPerfil: '#E0EEEE',
-  corGithub: '#000'
+  corPerfil: '#0d1117',
+  corGithub: '#fff',
+  corBotao: '#fff',
+  corFundoSobre: '#f9fafb'
 }
 
 export default temaLight

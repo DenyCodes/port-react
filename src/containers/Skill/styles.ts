@@ -7,7 +7,7 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   align-self: stretch;
-  background: var(--Gray-Default, #fff);
+  background: ${(props) => props.theme.corPrincipal};
 `
 export const Skils = styled.div`
   display: flex;
