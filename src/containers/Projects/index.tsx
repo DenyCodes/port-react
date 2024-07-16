@@ -5,6 +5,7 @@ import {
   DescricaoDiv,
   Div,
   Head,
+  IconB,
   ImageP,
   Subtitulo,
   Titulo
@@ -13,6 +14,7 @@ import {
 import efood from '../../images/efood.png'
 import eplay from '../../images/eplay.png'
 import disney from '../../images/disney.png'
+import icon from '../../images/Iconb.svg'
 
 const Projects = () => (
   <Container id="Projetos">
@@ -53,6 +55,11 @@ const Projects = () => (
             <span>Figma</span>
             <span>Requisição API</span>
           </CampoTag>
+          <IconB>
+            <a href="https://efood-orpin.vercel.app/">
+              <img src={icon} />
+            </a>
+          </IconB>
         </DescricaoDiv>
       </Content>
       <Content>
@@ -82,6 +89,11 @@ const Projects = () => (
             <span>Figma</span>
             <span>Requisição API</span>
           </CampoTag>
+          <IconB>
+            <a href="https://eplay-one.vercel.app/">
+              <img src={icon} />
+            </a>
+          </IconB>
         </DescricaoDiv>
       </Content>
       <Content>
@@ -111,6 +123,11 @@ const Projects = () => (
             <span>Figma</span>
             <span>Requisição API</span>
           </CampoTag>
+          <IconB>
+            <a href="https://disney-ooya.vercel.app/">
+              <img src={icon} />
+            </a>
+          </IconB>
         </DescricaoDiv>
       </Content>
     </Div>

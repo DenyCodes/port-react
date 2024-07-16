@@ -157,3 +157,9 @@ export const CampoTag = styled.div`
     background: var(--Gray-200, #e5e7eb);
   }
 `
+export const IconB = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  align-self: stretch;
+`
