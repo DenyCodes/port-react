@@ -10,6 +10,9 @@ export const Navbar = styled.div`
   justify-content: space-between;
   align-items: center;
   align-self: stretch;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `
 export const Ul = styled.ul`
   margin-left: auto;

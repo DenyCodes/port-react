@@ -7,7 +7,11 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   align-self: stretch;
-  background: var(--Gray-Default, #fff);
+  background: ${(props) => props.theme.corPrincipal};
+  @media (max-width: 768px) {
+    width: 100%;
+    padding: 80px;
+  }
 `
 export const Div = styled.div`
   display: flex;
@@ -17,6 +21,9 @@ export const Div = styled.div`
   align-items: center;
   gap: 48px;
   align-self: stretch;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `
 export const Titulo = styled.div`
   display: flex;
@@ -41,6 +48,9 @@ export const Head = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 16px;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `
 export const Subtitulo = styled.div`
   display: flex;
@@ -67,7 +77,7 @@ export const Content = styled.div`
   width: 1152px;
   align-items: flex-start;
   border-radius: 12px;
-  background: var(--Gray-Default, #fff);
+  background: ${(props) => props.theme.corFundoCard};
 
   /* Drop Shadow/md */
   box-shadow:
@@ -113,7 +123,7 @@ export const DescricaoDiv = styled.div`
   }
   p {
     align-self: stretch;
-    color: var(--Gray-600, #4b5563);
+    color: ${(props) => props.theme.corDeFundoBotao};
 
     /* Body2/Normal - All */
     font-family: Inter;

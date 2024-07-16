@@ -7,7 +7,8 @@ const temaLight = {
   corPerfil: '#0d1117',
   corGithub: '#fff',
   corBotao: '#fff',
-  corFundoSobre: '#f9fafb'
+  corFundoSobre: '#f9fafb',
+  corFundoCard: '#ffffff'
 }
 
 export default temaLight

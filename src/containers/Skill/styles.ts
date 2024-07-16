@@ -8,6 +8,9 @@ export const Container = styled.div`
   align-items: center;
   align-self: stretch;
   background: ${(props) => props.theme.corPrincipal};
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `
 export const Skils = styled.div`
   display: flex;
@@ -16,6 +19,7 @@ export const Skils = styled.div`
   gap: 16px;
   align-self: stretch;
   p {
+    color: ${(props) => props.theme.corSecundaria};
     margin-left: 20%;
   }
   h1 {
@@ -30,6 +34,9 @@ export const Skils = styled.div`
     line-height: 20px; /* 142.857% */
     background: var(--Gray-200, #e5e7eb);
   }
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `
 export const Icons = styled.div`
   margin-top: 20px;
@@ -38,6 +45,10 @@ export const Icons = styled.div`
   gap: 8px;
   img {
     width: 50px;
+  }
+  @media (max-width: 768px) {
+    width: 100%;
+    display: block;
   }
 `
 export const IcDiv = styled.div`

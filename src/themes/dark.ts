@@ -7,12 +7,14 @@ const temaDark = {
   corDaBorda: '#c1c1c1',
   corPerfil: '#0d1117',
   corGithub: '#fff',
-  corFundoSobre: '#111827'
+  corFundoSobre: '#111827',
+  corFundoCard: '#374151'
 }
 
 export default temaDark
 
 export type Theme = {
+  corFundoCard: string
   corFundoSobre: string
   corBotao: string
   corGithub: string

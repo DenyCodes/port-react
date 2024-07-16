@@ -8,6 +8,13 @@ export const About = styled.div`
   align-self: stretch;
   background: ${(props) => props.theme.corFundoSobre};
   color: ${(props) => props.theme.corSecundaria};
+  @media (max-width: 768px) {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+  }
 `
 export const Me = styled.div`
   display: flex;
@@ -28,6 +35,14 @@ export const Curious = styled.div`
   gap: 24px;
   flex: 1 0 0;
   align-self: stretch;
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    align-self: stretch;
+    margin-left: 0;
+  }
 `
 
 export const Container = styled.div`
@@ -37,4 +52,11 @@ export const Container = styled.div`
   align-items: center;
   gap: 48px;
   flex: 1 0 0;
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    flex: 1 0 0;
+  }
 `

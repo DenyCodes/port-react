@@ -8,6 +8,9 @@ export const Container = styled.div`
   align-self: stretch;
   background: ${(props) => props.theme.corPrincipal};
   color: ${(props) => props.theme.corSecundaria};
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `
 export const Sobre = styled.div`
   display: flex;
@@ -19,6 +22,9 @@ export const Sobre = styled.div`
   align-self: stretch;
   h1 {
     color: ${(props) => props.theme.corDeFundoBotao};
+  }
+  @media (max-width: 768px) {
+    max-width: 100%;
   }
 `
 export const Pic = styled.img`
