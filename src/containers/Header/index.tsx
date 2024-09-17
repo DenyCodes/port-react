@@ -10,9 +10,8 @@ const Header = (props: Props) => (
     <Navbar>
       <Ul>
         <Li>
-          <a href="https://www.linkedin.com/in/denisoliveiradev/">About</a>
+          <a href="https://www.linkedin.com/in/denisoliveiradev/">Sobre</a>
           <a href="https://github.com/DenyCodes?tab=repositories">Projetos</a>
-          <a href="https://wa.me/5521993450137">Contato</a>
           <Icon onClick={props.trocaTema}>
             <img src={light} />
           </Icon>

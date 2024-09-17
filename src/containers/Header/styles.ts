@@ -12,10 +12,17 @@ export const Navbar = styled.div`
   align-self: stretch;
   @media (max-width: 768px) {
     width: 100%;
+    display: flex;
+    height: 50%;
   }
 `
 export const Ul = styled.ul`
   margin-left: auto;
+  @media (max-width: 768px) {
+    width: 100%;
+    right: 90px;
+    position: relative;
+  }
 `
 export const Li = styled.li`
   display: flex;
@@ -25,8 +32,11 @@ export const Li = styled.li`
   margin-left: 32px;
   background-color: ${(props) => props.theme.corPrincipal};
   a {
+    width: 45px;
     color: ${(props) => props.theme.corSecundaria};
     text-decoration: none;
+  @media (max-width: 768px) {
+    width: 90%;
   }
 `
 export const BottonCV = styled.div`
@@ -42,6 +52,9 @@ export const BottonCV = styled.div`
     text-decoration: none;
     color: ${(props) => props.theme.corBotao};
   }
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `
 export const Banner = styled.img`
   position: relative;
@@ -56,4 +69,7 @@ export const Icon = styled.div`
   padding: 6px;
   justify-content: center;
   align-items: center;
+  @media (max-width: 768px) {
+    width: 100px;
+  }
 `

@@ -10,6 +10,8 @@ export const Container = styled.div`
   color: ${(props) => props.theme.corSecundaria};
   @media (max-width: 768px) {
     width: 100%;
+    display: block;
+    padding: 65px 15px;
   }
 `
 export const Sobre = styled.div`

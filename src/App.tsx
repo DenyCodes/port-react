@@ -1,7 +1,7 @@
 import { ThemeProvider } from 'styled-components'
 import { useState } from 'react'
 
-import EstiloGlobal, { Container } from './styles'
+import EstiloGlobal from './styles'
 import Sidebar from './containers/Siderbar'
 import Sobre from './containers/Sobre'
 import Projetos from './containers/Projetos'
