@@ -3,7 +3,7 @@ import icondot from '../../images/icon-dot-emerald-500.png'
 import github from '../../images/github.svg'
 import linkedin from '../../images/Linkedin.png'
 import twitter from '../../images/twitter.svg'
-import denis from '../../images/eu.png'
+import denis from '../../images/eu.jpg'
 import { Container, Disponivel, Linkedin, Local, Pic, Sobre } from './styles'
 
 const Hero = () => (

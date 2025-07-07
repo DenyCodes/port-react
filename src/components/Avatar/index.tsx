@@ -1,5 +1,5 @@
 import { FotoPerfil } from './styles'
 
-const Avatar = () => <FotoPerfil src="https://github.com/DenyCodes.png" />
+const Avatar = () => <FotoPerfil src="http://localhost" />
 
 export default Avatar
