@@ -33,7 +33,7 @@ const Projects = () => (
           <img src={geolocal} />
         </ImageP>
         <DescricaoDiv>
-          <h2>Geolocal</h2>
+          <Titulo>Geolocal</Titulo>
           <p>
             <TituloDesc>JavaScript puro + Google Maps API</TituloDesc>{' '}
             Desenvolvi um módulo completo de geolocalização para o sistema de
@@ -73,7 +73,7 @@ const Projects = () => (
           <img src={efood} />
         </ImageP>
         <DescricaoDiv>
-          <h2>Efood</h2>
+          <Titulo>Efood</Titulo>
           <p>
             <TituloDesc>TypeScript, React e API</TituloDesc>O eFood é uma
             aplicação web moderna e responsiva desenvolvida para fornecer uma
@@ -112,7 +112,7 @@ const Projects = () => (
           <img src={eplay} />
         </ImageP>
         <DescricaoDiv>
-          <h2>Eplay</h2>
+          <Titulo>Eplay</Titulo>
           <p>
             <TituloDesc>React, TypeScript, redux, APIRest</TituloDesc>O ePlay é
             uma plataforma de streaming de jogos online, desenvolvida para
@@ -150,7 +150,7 @@ const Projects = () => (
           <img src={disney} />
         </ImageP>
         <DescricaoDiv>
-          <h2>Disney+ Clone</h2>
+          <Titulo>Disney+ Clone</Titulo>
           <p>
             <TituloDesc>Scss e html</TituloDesc>O Disney+ Clone é uma réplica da
             famosa plataforma de streaming Disney+, desenvolvida para demonstrar
