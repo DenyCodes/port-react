@@ -39,6 +39,10 @@ export const Li = styled.li`
   @media (max-width: 768px) {
     width: 90%;
   }
+    `
+
+export const ligt = styled.div`
+  width: 24px;
 `
 export const BottonCV = styled.div`
   display: flex;

@@ -34,6 +34,7 @@ export const Curious = styled.div`
   margin-left: 0;
   color: ${(props) => props.theme.corDeFundoBotao};
   background: ${(props) => props.theme.corFundocurious};
+  border: 2px solid ${(props) => props.theme.corDeFundoBotao};
 
   h1 {
     margin-bottom: 20px;

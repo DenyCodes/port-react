@@ -10,7 +10,7 @@ const temaLight = {
   corFundoSobre: '#f9fafb',
   corFundoCard: '#ffffff',
   corFundoTitulo: '#000',
-  corFundocurious: '#282a35',
+  corFundocurious: '#ffffff',
   corDesc: '#fff'
 }
 

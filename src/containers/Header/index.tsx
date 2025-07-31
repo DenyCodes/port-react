@@ -1,4 +1,4 @@
-import { Navbar, Li, Banner, BottonCV, Icon, Ul } from './styles'
+import { Navbar, Li, Banner, BottonCV, Icon, Ul, ligt } from './styles'
 import Background from '../../images/Denis Oliveira (2).png'
 import light from '../../images/Icon.svg'
 import DownloadButton from '../../components/Download'
