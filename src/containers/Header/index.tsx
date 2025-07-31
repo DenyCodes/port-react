@@ -10,11 +10,13 @@ const Header = (props: Props) => (
     <Navbar>
       <Ul>
         <Li>
-          <a href="https://www.linkedin.com/in/denisoliveiradev/">Sobre</a>
-          <a href="https://github.com/DenyCodes?tab=repositories">Projetos</a>
-          <Icon onClick={props.trocaTema}>
-            <img src={light} />
-          </Icon>
+          <div>
+            <a href="https://www.linkedin.com/in/denisoliveiradev/">Sobre</a>
+          </div>
+          <div>
+            <a href="https://github.com/DenyCodes?tab=repositories">Projetos</a>
+          </div>
+          <img src={light} alt="icon" onClick={props.trocaTema} />
           <BottonCV>
             <DownloadButton />
           </BottonCV>

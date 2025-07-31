@@ -13,6 +13,12 @@ export const Container = styled.div`
     padding: 80px;
   }
 `
+export const TituloDesc = styled.div`
+  background-color: #ffcd37;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
 export const Div = styled.div`
   display: flex;
   padding: 0px 32px;
@@ -158,8 +164,17 @@ export const CampoTag = styled.div`
   }
 `
 export const IconB = styled.div`
+  background-color: #ffcd37;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   display: flex;
   align-items: center;
   gap: 12px;
   align-self: stretch;
+  color: #fff;
+  a {
+    text-decoration: none;
+    color: #000;
+  }
 `

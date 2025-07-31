@@ -2,11 +2,8 @@ import styled from 'styled-components'
 
 export const Navbar = styled.div`
   background-color: ${(props) => props.theme.corPrincipal};
-  height: 100px;
   padding-top: 16px;
   margin-top: 0;
-  display: flex;
-  padding: 16px 80px;
   justify-content: space-between;
   align-items: center;
   align-self: stretch;
@@ -14,6 +11,9 @@ export const Navbar = styled.div`
     width: 100%;
     display: flex;
     height: 50%;
+  }
+  img {
+    cursor: pointer;
   }
 `
 export const Ul = styled.ul`
@@ -24,6 +24,7 @@ export const Ul = styled.ul`
     position: relative;
   }
 `
+
 export const Li = styled.li`
   display: flex;
   justify-content: center;

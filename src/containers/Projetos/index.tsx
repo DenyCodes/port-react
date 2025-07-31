@@ -15,7 +15,6 @@ type Repo = {
   homepage?: string
 }
 
-// Defina os nomes dos 5 repositórios específicos que deseja exibir
 const specificRepos = [
   'efood_',
   'calculadora',
