@@ -15,8 +15,8 @@ export const Me = styled.div`
   justify-content: center;
   align-items: center;
   border-radius: 12px;
-  background: ${(props) => props.theme.corDaBorda};
-  color: ${(props) => props.theme.corDeFundoBotao};
+  background: ${(props) => props.theme.corDeFundoBotao};
+  color: ${(props) => props.theme.corBotao};
 
   @media (max-width: 768px) {
     position: relative;
@@ -24,13 +24,16 @@ export const Me = styled.div`
   }
 `
 export const Curious = styled.div`
+  padding: 80px;
   align-items: center;
   width: 80%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 24px;
+  gap: 10px;
   margin-left: 0;
+  color: ${(props) => props.theme.corDeFundoBotao};
+  background: ${(props) => props.theme.corFundocurious};
 
   h1 {
     margin-bottom: 20px;

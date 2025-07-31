@@ -1,40 +1,59 @@
-import iconloc from '../../images/Iconloc.svg'
 import icondot from '../../images/icon-dot-emerald-500.png'
-import github from '../../images/github.svg'
-import linkedin from '../../images/Linkedin.png'
 import denis from '../../images/eu.jpg'
-import { Container, Disponivel, Linkedin, Local, Pic, Sobre } from './styles'
+import {
+  Container,
+  Disponivel,
+  Icones,
+  Pic,
+  PicPerfil,
+  Sobre,
+  SobreText
+} from './styles'
 
 const Hero = () => (
   <Container>
     <Sobre>
-      <h1>Oi, Eu sou Denis</h1>
-      <p>
-        Sou um desenvolvedor full stack (React.js e Python) com foco na criação
-        de experiências digitais excepcionais que sejam rápidas, acessíveis,
-        visualmente atraentes e responsivas.
-      </p>
-      <Local>
-        <div>
-          <img src={iconloc} /> Rio de janeiro - RJ
-        </div>
+      <SobreText>
+        <h1>Oi, Meu nome é Denis, tudo bem?!</h1>
+        <p
+          style={{
+            padding: '2%',
+            borderRadius: '10px',
+            backgroundColor: '#fff',
+            color: 'black'
+          }}
+        >
+          Sou desenvolvedor full stack com experiência sólida em JavaScript
+          puro, React.js, PHP e Python, atuando tanto no front quanto no
+          back-end. Tenho como foco a criação de aplicações modernas, rápidas,
+          acessíveis e responsivas, sempre com atenção à performance,
+          usabilidade e qualidade de código. Gosto de transformar ideias em
+          soluções reais, com interfaces bem construídas e arquiteturas
+          eficientes.
+        </p>
         <Disponivel>
-          <img src={icondot} /> Disponivel para novos projetos
+          <Task />
         </Disponivel>
-      </Local>
-      <div>
-        <a href="https://github.com/DenyCodes">
-          <img src={github} />
-        </a>
-        <Linkedin>
-          <a href="https://www.linkedin.com/in/denisoliveiradev/">
-            <img src={linkedin} />
-          </a>
-        </Linkedin>
-      </div>
+      </SobreText>
+      <Icones></Icones>
     </Sobre>
-    <Pic src={denis} />
+    <PicPerfil>
+      <Pic src={denis} />
+    </PicPerfil>
+    <header></header>
   </Container>
 )
 
 export default Hero
+export const Task = () => {
+  return (
+    <>
+      {[1, 2, 3, 4, 5].map((item) => (
+        <div key={item}>
+          <img src={icondot} title="Disponivel" /> Disponivel para novos
+          projetos{' '}
+        </div>
+      ))}
+    </>
+  )
+}

@@ -140,7 +140,10 @@ const Projects = () => (
           </CampoTag>
           <IconB>
             <a href="https://eplay-one.vercel.app/">
-              <img src={icon} />
+              <TituloDesc>
+                VEJA
+                <img src={icon} />
+              </TituloDesc>
             </a>
           </IconB>
         </DescricaoDiv>
@@ -175,7 +178,10 @@ const Projects = () => (
           </CampoTag>
           <IconB>
             <a href="https://disney-ooya.vercel.app/">
-              <img src={icon} />
+              <TituloDesc>
+                VEJA
+                <img src={icon} />
+              </TituloDesc>
             </a>
           </IconB>
         </DescricaoDiv>

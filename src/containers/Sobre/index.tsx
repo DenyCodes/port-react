@@ -19,9 +19,8 @@ const Sobre = () => (
         <p>
           Minha jornada na tecnologia começou formalmente em 2016, quando me
           matriculei no curso superior em Sistemas de Informação na Estácio,
-          onde estudei até 2021. Em 2022, decidi seguir meu verdadeiro sonho de
-          me tornar um desenvolvedor, e me matriculei na EBAC - Escola Britânica
-          de Artes Criativas e Tecnologia, onde me formei em 2024,
+          onde estudei até 2021. Em 2022, me matriculei na EBAC - Escola
+          Britânica de Artes Criativas e Tecnologia, onde me formei em 2024,
           constantemente evoluindo como desenvolvedor e dominando as mais
           recentes tecnologias.
         </p>
