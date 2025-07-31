@@ -47,10 +47,7 @@ const Projects = () => (
             perfil e status (ativo/inativo); Exibição detalhada de informações
             no clique do marcador; Integração com banco de dados via PHP para
             carregar coordenadas geográficas; Responsividade e performance
-            aprimorada mesmo com grande volume de dados; Organização modular via
-            arquivos dedicados (geolocal.js, mapa.js, _fx.php). Esse módulo
-            trouxe mais eficiência ao planejamento de transporte escolar e
-            possibilitou um controle visual intuitivo para os gestores públicos.
+            aprimorada mesmo com grande volume de dados.
           </p>
           <CampoTag>
             <span>JavaScript</span>

@@ -67,7 +67,7 @@ export const Subtitulo = styled.div`
   p {
     max-width: 576px;
     align-self: stretch;
-    color: var(--Gray-600, #4b5563);
+    color: #fff;
     text-align: center;
 
     /* Subtitle/Normal - Desktop */
