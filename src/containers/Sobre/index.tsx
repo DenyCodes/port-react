@@ -10,30 +10,38 @@ const Sobre = () => (
       <Curious>
         <h1>Curioso sobre mim?</h1>
         <p>
-          Sou um desenvolvedor full stack especializado em React.js e Python,
-          com uma paixão inabalável por criar produtos digitais que combinam
-          excelência técnica e visual. Valorizo a experiência do usuário, o
-          design pixel-perfect, e a escrita de código limpo, legível e de alto
-          desempenho.
+          Sou um desenvolvedor Full Stack especializado em JavaScript puro,
+          React.js, PHP e Python, apaixonado por criar experiências digitais
+          excepcionais que aliam excelência técnica, estética e performance.
+          Tenho uma abordagem focada no usuário, priorizando interfaces
+          intuitivas, design responsivo e a escrita de código limpo, modular e
+          eficiente.
         </p>
+
         <p>
-          Minha jornada na tecnologia começou formalmente em 2016, quando me
-          matriculei no curso superior em Sistemas de Informação na Estácio,
-          onde estudei até 2021. Em 2022, me matriculei na EBAC - Escola
-          Britânica de Artes Criativas e Tecnologia, onde me formei em 2024,
-          constantemente evoluindo como desenvolvedor e dominando as mais
-          recentes tecnologias.
+          Minha trajetória na tecnologia teve início formal em 2016, com o curso
+          superior em Sistemas de Informação na Universidade Estácio de Sá,
+          concluído em 2021. Posteriormente, busquei especialização na EBAC
+          (Escola Britânica de Artes Criativas e Tecnologia), onde me formei em
+          2024, aprimorando continuamente minhas habilidades em desenvolvimento
+          Front-end e Back-end com tecnologias modernas.
         </p>
+
         <p>
-          Hoje, aos 30 anos, estou focado em construir aplicativos web de ponta
-          utilizando tecnologias modernas como React, TypeScript e Python. Gosto
-          de trabalhar em produtos de ponta a ponta, desde a concepção até o
-          desenvolvimento, sempre com uma mentalidade progressista.
+          Hoje, com 31 anos, atuo no desenvolvimento de soluções completas e
+          inovadoras, trabalhando com React, JavaScript puro, TypeScript, PHP e
+          Python. Possuo experiência em projetos complexos, especialmente em
+          geolocalização com integrações ao Google Maps API, além de sólida
+          atuação em otimização de performance, manutenção de sistemas legados e
+          liderança técnica em equipes de desenvolvimento.
         </p>
+
         <p>
-          Quando não estou codificando, você pode me encontrar lendo algum livro
-          ou aprendendo novas tecnologias. Estou sempre buscando expandir meus
-          conhecimentos e habilidades para criar soluções inovadoras.
+          Fora do ambiente de trabalho, estou sempre explorando novas
+          tecnologias, estudando e buscando conhecimento em áreas diversas, como
+          espiritualidade, astrologia e desenvolvimento pessoal. Acredito que a
+          evolução contínua é fundamental para entregar soluções tecnológicas
+          diferenciadas e eficazes.
         </p>
       </Curious>
     </Container>
