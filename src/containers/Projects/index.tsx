@@ -6,10 +6,12 @@ import {
   Div,
   Head,
   IconB,
+  IconB2,
   ImageP,
   Subtitulo,
   Titulo,
-  TituloDesc
+  TituloDesc,
+  TituloDesc2
 } from './styles'
 import geolocal from '../../images/geolocal.png'
 import efood from '../../images/efood.png'
@@ -36,7 +38,7 @@ const Projects = () => (
         <DescricaoDiv>
           <Titulo>Rede Social</Titulo>
           <p>
-            <TituloDesc>Python, Django</TituloDesc>Desenvolvi uma aplicação de
+            <TituloDesc2>Python, Django</TituloDesc2>Desenvolvi uma aplicação de
             rede social do zero utilizando Django, com recursos como
             autenticação de usuários, criação de posts, sistema de seguidores,
             upload de fotos de perfil e feed em tempo real. O projeto utiliza
@@ -53,14 +55,14 @@ const Projects = () => (
             <span>css</span>
             <span>clean architecture</span>
           </CampoTag>
-          <IconB>
+          <IconB2>
             <a href="https://eplay-one.vercel.app/">
-              <TituloDesc>
+              <TituloDesc2>
                 VEJA
                 <img src={icon} />
-              </TituloDesc>
+              </TituloDesc2>
             </a>
-          </IconB>
+          </IconB2>
         </DescricaoDiv>
       </Content>
       <Content>

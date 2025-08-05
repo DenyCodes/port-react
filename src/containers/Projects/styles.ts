@@ -19,6 +19,13 @@ export const TituloDesc = styled.div`
   justify-content: center;
   align-items: center;
 `
+export const TituloDesc2 = styled.div`
+  display: flex;
+  background: black;
+  justify-content: center;
+  align-items: center;
+  color: #007bff;
+`
 export const Div = styled.div`
   display: flex;
   padding: 0px 32px;
@@ -165,6 +172,21 @@ export const CampoTag = styled.div`
 `
 export const IconB = styled.div`
   background-color: #ffcd37;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  align-self: stretch;
+  color: #fff;
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+`
+export const IconB2 = styled.div`
+  background-color: black;
   display: flex;
   justify-content: center;
   align-items: center;
