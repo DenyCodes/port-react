@@ -1,10 +1,10 @@
 import styled from 'styled-components'
-
 export const About = styled.div`
   display: flex;
   padding: 96px 80px;
   background: ${(props) => props.theme.corFundoSobre};
   color: ${(props) => props.theme.corSecundaria};
+  background-image: url(${(props) => props.theme.backgroundimage});
   @media (max-width: 768px) {
     width: 100%;
   }

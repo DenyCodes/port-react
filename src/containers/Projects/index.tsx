@@ -16,6 +16,7 @@ import efood from '../../images/efood.png'
 import eplay from '../../images/eplay.png'
 import disney from '../../images/disney.png'
 import icon from '../../images/Iconb.svg'
+import RedeSocial from '../../images/rede-social.png'
 
 const Projects = () => (
   <Container id="Projetos">
@@ -28,6 +29,40 @@ const Projects = () => (
           <p>Alguns dos projetos notáveis que construí:</p>
         </Subtitulo>
       </Head>
+      <Content>
+        <ImageP>
+          <img src={RedeSocial} />
+        </ImageP>
+        <DescricaoDiv>
+          <Titulo>Rede Social</Titulo>
+          <p>
+            <TituloDesc>Python, Django</TituloDesc>Desenvolvi uma aplicação de
+            rede social do zero utilizando Django, com recursos como
+            autenticação de usuários, criação de posts, sistema de seguidores,
+            upload de fotos de perfil e feed em tempo real. O projeto utiliza
+            princípios de Clean Architecture, integrações com PostgreSQL e boas
+            práticas de desenvolvimento seguro. Hospedagem em ambiente cloud,
+            com deploy automatizado e gestão de arquivos estáticos. Stack:
+            Django, Python, HTML, CSS, PostgreSQL, Railway.
+          </p>
+          <CampoTag>
+            <span>python</span>
+            <span>django</span>
+            <span>postgresql</span>
+            <span>html</span>
+            <span>css</span>
+            <span>clean architecture</span>
+          </CampoTag>
+          <IconB>
+            <a href="https://eplay-one.vercel.app/">
+              <TituloDesc>
+                VEJA
+                <img src={icon} />
+              </TituloDesc>
+            </a>
+          </IconB>
+        </DescricaoDiv>
+      </Content>
       <Content>
         <ImageP>
           <img src={geolocal} />

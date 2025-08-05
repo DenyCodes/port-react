@@ -1,3 +1,5 @@
+import background from '../src/images/backgroundimage.png'
+
 const temaDark = {
   corPrincipal: '#000',
   corSecundaria: '#D1D5DB',
@@ -11,7 +13,8 @@ const temaDark = {
   corFundoCard: '#374151',
   corFundoTitulo: '#374151',
   corDesc: '#D1D5DB',
-  corFundocurious: '#282a35'
+  corFundocurious: '#282a35',
+  backgroundimage: background
 }
 
 export default temaDark
