@@ -8,39 +8,55 @@ type Props = {
   trocaTema: () => void
 }
 
-const Header = (props: Props) => (
-  <div>
-    <Navbar>
-      <Ul>
-        <Li>
-          <div>
-            <a href="https://www.linkedin.com/in/denisoliveiradev/">Sobre</a>
-          </div>
-          <div>
-            <a href="https://github.com/DenyCodes?tab=repositories">Projetos</a>
-          </div>
+const Header = (props: Props) => {
+  // Função para scrollar até a penúltima seção (id="projetos")
+  const scrollToProjetos = (
+    e: React.MouseEvent<HTMLAnchorElement, MouseEvent>
+  ) => {
+    e.preventDefault()
+    const section = document.getElementById('projetos')
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
 
-          {/* Ícone como fonte de material icons */}
-          <Lightmode
-            className="material-icons-outlined"
-            onClick={props.trocaTema}
-            style={{
-              fontSize: 40,
-              color: 'white',
-              cursor: 'pointer',
-              transition: 'color 0.3s'
-            }}
-            onMouseEnter={(e) => (e.currentTarget.style.color = 'yellow')}
-            onMouseLeave={(e) => (e.currentTarget.style.color = 'white')}
-          />
+  return (
+    <div>
+      <Navbar>
+        <Ul>
+          <Li>
+            <div>
+              <a href="https://www.linkedin.com/in/denisoliveiradev/">Sobre</a>
+            </div>
+            <div>
+              {/* Link agora chama a função de scroll */}
+              <a href="#projetos" onClick={scrollToProjetos}>
+                Projetos
+              </a>
+            </div>
 
-          <BottonCV>
-            <DownloadButton />
-          </BottonCV>
-        </Li>
-      </Ul>
-    </Navbar>
-  </div>
-)
+            {/* Ícone como fonte de material icons */}
+            <Lightmode
+              className="material-icons-outlined"
+              onClick={props.trocaTema}
+              style={{
+                fontSize: 40,
+                color: 'white',
+                cursor: 'pointer',
+                transition: 'color 0.3s'
+              }}
+              onMouseEnter={(e) => (e.currentTarget.style.color = 'yellow')}
+              onMouseLeave={(e) => (e.currentTarget.style.color = 'white')}
+            />
+
+            <BottonCV>
+              <DownloadButton />
+            </BottonCV>
+          </Li>
+        </Ul>
+      </Navbar>
+    </div>
+  )
+}
 
 export default Header
