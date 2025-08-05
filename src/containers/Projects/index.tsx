@@ -61,7 +61,7 @@ const Projects = () => (
               <span>clean architecture</span>
             </CampoTag>
             <IconB2>
-              <a href="https://social-python.up.railway.app/.vercel.app/">
+              <a href="https://social-python.up.railway.app/">
                 <TituloDesc2>
                   VEJA
                   <img src={icon} />
