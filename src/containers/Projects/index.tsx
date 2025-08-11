@@ -20,10 +20,6 @@ import disney from '../../images/disney.png'
 import icon from '../../images/Iconb.svg'
 import RedeSocial from '../../images/rede-social.png'
 
-{
-  /* Seus projetos aqui */
-}
-
 const Projects = () => (
   <Container id="Projetos">
     <section id="projetos">
