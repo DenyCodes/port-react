@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Navbar = styled.div`
-  background-color: ${(props) => props.theme.corPrincipal};
+  background-color: ${(props) => props.theme.corFundoHeader};
   padding-top: 16px;
   margin-top: 0;
   justify-content: space-between;
@@ -31,7 +31,7 @@ export const Li = styled.li`
   align-items: center;
   gap: 24px;
   margin-left: 32px;
-  background-color: ${(props) => props.theme.corPrincipal};
+  // background-color: ${(props) => props.theme.corPrincipal};
   a {
     width: 45px;
     color: ${(props) => props.theme.corSecundaria};

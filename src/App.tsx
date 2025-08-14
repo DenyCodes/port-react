@@ -25,7 +25,6 @@ function App() {
       <EstiloGlobal />
       <Header trocaTema={trocaTema} />
       <Hero />
-      <Sobre />
       <Skill />
       <Projects />
       <Avaliacao />

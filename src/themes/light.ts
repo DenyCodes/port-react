@@ -11,7 +11,8 @@ const temaLight = {
   corFundoCard: '#ffffff',
   corFundoTitulo: '#000',
   corFundocurious: '#ffffff',
-  corDesc: '#fff'
+  corDesc: '#fff',
+  corFundoHeader: '#0d1117'
 }
 
 export default temaLight

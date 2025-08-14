@@ -23,13 +23,12 @@ const Hero = () => (
             color: 'black'
           }}
         >
-          Sou desenvolvedor full stack com experiência sólida em JavaScript
-          puro, React.js, PHP e Python, atuando tanto no front quanto no
-          back-end. Tenho como foco a criação de aplicações modernas, rápidas,
-          acessíveis e responsivas, sempre com atenção à performance,
-          usabilidade e qualidade de código. Gosto de transformar ideias em
-          soluções reais, com interfaces bem construídas e arquiteturas
-          eficientes.
+          Sou desenvolvedor full stack com experiência sólida Desenvolvimento
+          Web, atuando tanto no front quanto no back-end. Tenho como foco a
+          criação de aplicações modernas, rápidas, acessíveis e responsivas,
+          sempre com atenção à performance, usabilidade e qualidade de código.
+          Gosto de transformar ideias em soluções reais, com interfaces bem
+          construídas e arquiteturas eficientes.
         </p>
         <Disponivel>
           <Task />
@@ -48,7 +47,7 @@ export default Hero
 export const Task = () => {
   return (
     <>
-      {[1, 2, 3, 4, 5].map((item) => (
+      {[1].map((item) => (
         <div key={item}>
           <img src={icondot} title="Disponivel" /> Disponivel para novos
           projetos{' '}

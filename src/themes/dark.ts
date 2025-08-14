@@ -11,7 +11,8 @@ const temaDark = {
   corFundoCard: '#374151',
   corFundoTitulo: '#374151',
   corDesc: '#D1D5DB',
-  corFundocurious: '#282a35'
+  corFundocurious: '#282a35',
+  corFundoHeader: '#fff'
 }
 
 export default temaDark
@@ -29,4 +30,5 @@ export type Theme = {
   corPerfil: string
   corFundoTitulo: string
   corDesc: string
+  corFundoHeader: string
 }
