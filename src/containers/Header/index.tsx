@@ -26,7 +26,7 @@ const Header = (props: Props) => {
         <Ul>
           <Li>
             <div>
-              <a href="https://www.linkedin.com/in/denisoliveiradev/">Sobre</a>
+              <a href="https://github.com/DenyCodes">GitHub</a>
             </div>
             <div>
               {/* Link agora chama a função de scroll */}
