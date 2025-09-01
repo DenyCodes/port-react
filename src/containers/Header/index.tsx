@@ -3,6 +3,7 @@ import Background from '../../images/Denis Oliveira (2).png'
 import light from '../../images/Icon.svg'
 import DownloadButton from '../../components/Download'
 import Lightmode from '@mui/icons-material/LightMode'
+import { useLanguage } from '../../LanguageProvider'
 
 type Props = {
   trocaTema: () => void
@@ -10,6 +11,8 @@ type Props = {
 
 const Header = (props: Props) => {
   // Função para scrollar até a penúltima seção (id="projetos")
+  const { lang, toggleLang } = useLanguage()
+
   const scrollToProjetos = (
     e: React.MouseEvent<HTMLAnchorElement, MouseEvent>
   ) => {
@@ -52,6 +55,21 @@ const Header = (props: Props) => {
             <BottonCV>
               <DownloadButton />
             </BottonCV>
+            <button
+              onClick={toggleLang}
+              aria-label="Change language"
+              style={{
+                border: 'none',
+                background: 'transparent',
+                cursor: 'pointer',
+                fontWeight: 600
+              }}
+              title={
+                lang === 'en' ? 'Switch to Portuguese' : 'Mudar para inglês'
+              }
+            >
+              🌐 {lang === 'en' ? 'EN' : 'PT'}
+            </button>
           </Li>
         </Ul>
       </Navbar>
