@@ -1,5 +1,5 @@
 const temaLight = {
-  corPrincipal: '#darkslategray',
+  corPrincipal: 'darkslategray',
   corSecundaria: '#ffffff',
   corDeFundo: '#282a35',
   corDeFundoBotao: '#0d1117',
@@ -12,8 +12,9 @@ const temaLight = {
   corFundoTitulo: '#000',
   corFundocurious: '#ffffff',
   corDesc: '#fff',
-  corFundoHeader: '#0d1117'
+  corFundoHeader: '#0d1117',
+  backgroundimage: '/imgs/bg-dark.png'
 }
 
 export default temaLight
-export const TemaPrincipal = '#darkslategray'
+export const TemaPrincipal = 'darkslategray'

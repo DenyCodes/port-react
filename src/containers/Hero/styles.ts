@@ -25,7 +25,7 @@ export const Sobre = styled.div`
   gap: 48px;
   align-self: stretch;
   h1 {
-    color: ${(props) => props.theme.TemaPrincipal};
+    color: ${(props) => props.theme.corPrincipal};
     background-color: ${(props) => props.theme.corFundoTitulo};
     padding: 2%;
     border-radius: 10px;
