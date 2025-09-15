@@ -1,4 +1,6 @@
 import styled from 'styled-components'
+import fundo from '../../images/fundo3.jpg'
+import fundo2 from '../../images/fundo.jpg'
 
 export const Container = styled.div`
   display: flex;
@@ -7,7 +9,11 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   align-self: stretch;
-  background: ${(props) => props.theme.corPrincipal};
+  background-image: url(${fundo});
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   @media (max-width: 768px) {
     width: 100%;
     padding: 80px;
@@ -61,6 +67,11 @@ export const Head = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 16px;
+  background-image: url(${fundo2});
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   @media (max-width: 768px) {
     width: 100%;
   }

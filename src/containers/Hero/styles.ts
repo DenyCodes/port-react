@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-
+import fundo from '../../images/fundo3.jpg'
 export const Container = styled.div`
   max-width: 100%;
   width: auto;
@@ -8,7 +8,11 @@ export const Container = styled.div`
   justify-content: space-between;
   // align-items: flex-start;
   // align-self: stretch;
-  background: ${(props) => props.theme.corPrincipal};
+  background-image: url(${fundo});
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   color: ${(props) => props.theme.corSecundaria};
   @media (max-width: 768px) {
     width: 100%;
@@ -44,6 +48,8 @@ export const PicPerfil = styled.div`
   width: 100%;
 `
 export const Pic = styled.img`
+  border: 34px solid maroon;
+
   height: 320px;
   border-radius: 50%;
   margin-bottom: 24px;

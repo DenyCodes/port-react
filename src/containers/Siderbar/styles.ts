@@ -9,7 +9,7 @@ export const BotaoTema = styled.button`
   margin-top: 20px;
   border-radius: 12px;
   padding: 8px;
-  color: ${(props) => props.theme.corDeFundo};
+  color: #fff;
   font-size: 10px;
   font-weight: bold;
   background-color: ${(props) => props.theme.corPrincipal};
@@ -20,7 +20,7 @@ export const Sidebarcontainer = styled.div`
   background-color: ${(props) => props.theme.corPerfil};
   width: 150px;
   padding: 20px;
-
+  color: #fff;
   border-radius: 10px;
   position: sticky;
   top: 80px;

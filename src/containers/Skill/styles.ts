@@ -1,13 +1,21 @@
 import styled from 'styled-components'
+import fundo from '../../images/fundo.jpg'
 
 export const Container = styled.div`
   display: flex;
   padding: 96px 80px;
+  color: #fff;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   align-self: stretch;
-  background: ${(props) => props.theme.corPrincipal};
+  border: 20px solid #82000f;
+
+  background-image: url(${fundo});
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   @media (max-width: 768px) {
     width: 100%;
   }
