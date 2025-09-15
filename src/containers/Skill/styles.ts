@@ -9,7 +9,7 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   align-self: stretch;
-  border: 20px solid #82000f;
+  border: 1px solid #82000f;
 
   background-image: url(${fundo});
   background-size: cover;

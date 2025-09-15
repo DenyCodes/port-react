@@ -1,14 +1,5 @@
-import icondot from '../../images/icon-dot-emerald-500.png'
 import denis from '../../images/eu.jpg'
-import {
-  Container,
-  Disponivel,
-  Icones,
-  Pic,
-  PicPerfil,
-  Sobre,
-  SobreText
-} from './styles'
+import { Container, Icones, Pic, PicPerfil, Sobre, SobreText } from './styles'
 
 const Hero = () => (
   <Container>
@@ -30,9 +21,6 @@ const Hero = () => (
           Gosto de transformar ideias em soluções reais, com interfaces bem
           construídas e arquiteturas eficientes.
         </p>
-        <Disponivel>
-          <Task />
-        </Disponivel>
       </SobreText>
       <Icones></Icones>
     </Sobre>
@@ -42,17 +30,4 @@ const Hero = () => (
     <header></header>
   </Container>
 )
-
 export default Hero
-export const Task = () => {
-  return (
-    <>
-      {[1].map((item) => (
-        <div key={item}>
-          <img src={icondot} title="Disponivel" /> Disponivel para novos
-          projetos{' '}
-        </div>
-      ))}
-    </>
-  )
-}

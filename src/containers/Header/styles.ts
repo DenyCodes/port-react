@@ -1,7 +1,15 @@
 import styled from 'styled-components'
+import fundo from '../../images/fundo2.jpg'
 
 export const Navbar = styled.div`
-  background-color: ${(props) => props.theme.corFundoHeader};
+  border: 1px solid maroon;
+  background-image: url(${fundo});
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 16px 80px;
+  background-color: #000;
   padding-top: 16px;
   margin-top: 0;
   justify-content: space-between;

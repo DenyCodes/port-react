@@ -63,10 +63,8 @@ export const Titulo = styled.div`
   }
 `
 export const Head = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
+  width: 100%;
+  border: 1px solid maroon;
   background-image: url(${fundo2});
   background-size: cover;
   background-position: center;
@@ -81,10 +79,8 @@ export const Subtitulo = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  align-self: stretch;
   p {
     max-width: 576px;
-    align-self: stretch;
     color: #fff;
     text-align: center;
 
@@ -97,11 +93,16 @@ export const Subtitulo = styled.div`
   }
 `
 export const Content = styled.div`
+  border: 1px solid maroon;
+  background-image: url(${fundo2});
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   display: flex;
   width: 1152px;
   align-items: flex-start;
   border-radius: 12px;
-  background: ${(props) => props.theme.corFundoCard};
 
   /* Drop Shadow/md */
   box-shadow:

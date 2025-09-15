@@ -32,44 +32,10 @@ const Header = (props: Props) => {
               <a href="https://github.com/DenyCodes">GitHub</a>
             </div>
             <div>
-              {/* Link agora chama a função de scroll */}
               <a href="#projetos" onClick={scrollToProjetos}>
                 Projetos
               </a>
             </div>
-
-            {/* Ícone como fonte de material icons */}
-            <Lightmode
-              className="material-icons-outlined"
-              onClick={props.trocaTema}
-              style={{
-                fontSize: 40,
-                color: 'white',
-                cursor: 'pointer',
-                transition: 'color 0.3s'
-              }}
-              onMouseEnter={(e) => (e.currentTarget.style.color = 'yellow')}
-              onMouseLeave={(e) => (e.currentTarget.style.color = 'white')}
-            />
-
-            <BottonCV>
-              <DownloadButton />
-            </BottonCV>
-            <button
-              onClick={toggleLang}
-              aria-label="Change language"
-              style={{
-                border: 'none',
-                background: 'transparent',
-                cursor: 'pointer',
-                fontWeight: 600
-              }}
-              title={
-                lang === 'en' ? 'Switch to Portuguese' : 'Mudar para inglês'
-              }
-            >
-              🌐 {lang === 'en' ? 'EN' : 'PT'}
-            </button>
           </Li>
         </Ul>
       </Navbar>

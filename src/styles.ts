@@ -1,4 +1,5 @@
 import styled, { createGlobalStyle } from 'styled-components'
+import fundo from './images/fundo2.jpg'
 
 import { Theme } from './themes/dark'
 
@@ -12,7 +13,8 @@ const EstiloGlobal = createGlobalStyle`
   }
 
   body {
-    background-color: ${(props) => (props.theme as Theme).corDeFundo};
+      background-image: url(${fundo});
+
     @media (max-width: 900px) {
     max-width: 100%;
     }

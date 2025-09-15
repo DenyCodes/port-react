@@ -1,15 +1,24 @@
 import styled from 'styled-components'
+import fundo from '../../images/fundo3.jpg'
+import fundo2 from '../../images/fundo2.jpg'
 
 export const Container = styled.div`
+  margin-top: 10%;
   display: flex;
   padding: 96px 80px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   align-self: stretch;
-  background: var(--Gray-50, #f9fafb);
+  border: 1px solid maroon;
+  background-image: url(${fundo});
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 `
 export const MainCard = styled.div`
+  color: #fff;
   display: flex;
   padding: 0px 32px;
   flex-direction: column;
@@ -17,6 +26,12 @@ export const MainCard = styled.div`
   align-items: center;
   gap: 48px;
   align-self: stretch;
+  border: 1px solid maroon;
+  background-image: url(${fundo2});
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 `
 export const Head = styled.div`
   display: flex;
@@ -56,7 +71,7 @@ export const SpanDesc = styled.span`
   h2 {
     max-width: 576px;
     align-self: stretch;
-    color: var(--Gray-600, #4b5563);
+    color: var(--Gray-600, #e5e7eb);
     text-align: center;
 
     /* Subtitle/Normal - Desktop */
@@ -86,6 +101,7 @@ export const Card = styled.div`
   align-self: stretch;
   border-radius: 12px;
   background: var(--Gray-Default, #fff);
+  border: 4px solid maroon;
 
   /* Drop Shadow/md */
   box-shadow:
