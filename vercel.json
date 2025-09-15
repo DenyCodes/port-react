@@ -1,7 +1,8 @@
 {
-  "functions": {
-    "api/**/*.js": {
-      "runtime": "nodejs@22"
-    }
-  }
+  "builds": [
+    { "src": "package.json", "use": "@vercel/static-build" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "/index.html" }
+  ]
 }
