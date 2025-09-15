@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import fundo from '../../images/fundo3.jpg'
-import fundo2 from '../../images/fundo2.jpg'
+import fundo2 from '../../images/fundo3.jpg'
 export const Container = styled.div`
   max-width: 100%;
   width: auto;

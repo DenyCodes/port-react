@@ -5,16 +5,16 @@ import { Container, Icones, Pic, PicPerfil, Sobre, SobreText } from './styles'
 const mensagens = [
   'Oi, Meu nome é Denis, tudo bem?!',
   'Sou dev full stack 🚀',
-  'Sou desenvolvedor full stack com experiência sólida Desenvolvimento Web, atuando tanto no front quanto no back-end.',
-  'aplicações modernas, rápidas, acessíveis e responsivas, sempre com atenção à performance, usabilidade e qualidade de código. Gosto de transformar ideias em soluções reais, com interfaces bem construídas e arquiteturas eficientes.'
+  'Sou desenvolvedor full stack com experiência sólida em Desenvolvimento Web, atuando tanto no front quanto no back-end.',
+  'Crio aplicações modernas, rápidas, acessíveis e responsivas. Sempre com atenção à performance, usabilidade e qualidade de código.'
 ]
 
 const Hero = () => {
   const [texto, setTexto] = useState('')
   const [indexMensagem, setIndexMensagem] = useState(0)
   const [indexLetra, setIndexLetra] = useState(0)
+  const [historico, setHistorico] = useState<string[]>([])
 
-  // efeito de digitação
   useEffect(() => {
     if (indexMensagem < mensagens.length) {
       if (indexLetra < mensagens[indexMensagem].length) {
@@ -24,12 +24,13 @@ const Hero = () => {
         }, 60)
         return () => clearTimeout(timeout)
       } else {
-        // próxima mensagem depois de 1.5s
+        // mensagem terminou → adiciona ao histórico
         const timeout = setTimeout(() => {
+          setHistorico((prev) => [...prev, mensagens[indexMensagem]])
           setTexto('')
           setIndexMensagem((prev) => prev + 1)
           setIndexLetra(0)
-        }, 1500)
+        }, 600)
         return () => clearTimeout(timeout)
       }
     }
@@ -39,18 +40,21 @@ const Hero = () => {
     <Container>
       <Sobre>
         <SobreText>
-          <h1 style={{ marginBottom: '12px' }}>
-            💬{' '}
-            <span
-              style={{
-                color: '#fff'
-              }}
-            >
-              {texto}
-            </span>
-          </h1>
+          <div className="mensagens-container">
+            {historico.map((msg, i) => (
+              <div key={i} className="mensagem animada">
+                {msg}
+              </div>
+            ))}
+            {texto && (
+              <div className="mensagem digitando">
+                <span>{texto}</span>
+                <span className="cursor">|</span>
+              </div>
+            )}
+          </div>
         </SobreText>
-        <Icones></Icones>
+        <Icones />
       </Sobre>
       <PicPerfil>
         <Pic src={denis} />

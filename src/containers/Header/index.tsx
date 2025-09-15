@@ -1,4 +1,4 @@
-import { Navbar, Li, Banner, BottonCV, Icon, Ul, ligt } from './styles'
+import { Navbar, Li, Banner, BottonCV, Icon, Ul, ligt, Links } from './styles'
 import Background from '../../images/Denis Oliveira (2).png'
 import light from '../../images/Icon.svg'
 import DownloadButton from '../../components/Download'
@@ -28,14 +28,14 @@ const Header = (props: Props) => {
       <Navbar>
         <Ul>
           <Li>
-            <div>
+            <Links>
               <a href="https://github.com/DenyCodes">GitHub</a>
-            </div>
-            <div>
+            </Links>
+            <Links>
               <a href="#projetos" onClick={scrollToProjetos}>
                 Projetos
               </a>
-            </div>
+            </Links>
           </Li>
         </Ul>
       </Navbar>

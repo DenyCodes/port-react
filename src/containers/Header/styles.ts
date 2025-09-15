@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import fundo from '../../images/fundo2.jpg'
+import fundo from '../../images/fundo.jpg'
 
 export const Navbar = styled.div`
   border: 1px solid maroon;
@@ -39,15 +39,10 @@ export const Li = styled.li`
   align-items: center;
   gap: 24px;
   margin-left: 32px;
-  // background-color: ${(props) => props.theme.corPrincipal};
-  a {
-    width: 45px;
-    color: ${(props) => props.theme.corSecundaria};
-    text-decoration: none;
   @media (max-width: 768px) {
     width: 90%;
   }
-    `
+`
 
 export const ligt = styled.div`
   width: 24px;
@@ -84,5 +79,13 @@ export const Icon = styled.div`
   align-items: center;
   @media (max-width: 768px) {
     width: 100px;
+  }
+`
+export const Links = styled.div`
+  width: 10%;
+  a {
+    color: white;
+    text-decoration: none;
+    background-color: #000;
   }
 `
