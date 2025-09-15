@@ -19,7 +19,7 @@ import eplay from '../../images/eplay.png'
 import disney from '../../images/disney.png'
 import icon from '../../images/Iconb.svg'
 import RedeSocial from '../../images/rede-social.png'
-
+import menuden from '../../images/menuden.png'
 const Projects = () => (
   <Container id="Projetos">
     <section id="projetos">
@@ -32,6 +32,44 @@ const Projects = () => (
             <p>Alguns dos projetos notáveis que construí:</p>
           </Subtitulo>
         </Head>
+        <Content>
+          <ImageP>
+            <img src={menuden} />
+          </ImageP>
+          <DescricaoDiv>
+            <Titulo>Menuden</Titulo>
+            <p>
+              <TituloDesc2>React 19, Prisma 6 e Tailwind CSS 4</TituloDesc2> O
+              MenuDen é um sistema de pedidos online desenvolvido em Next.js 15,
+              React 19, Prisma 6 e Tailwind CSS 4, pensado para restaurantes e
+              lanchonetes que desejam modernizar sua operação.🔹 Funcionalidades
+              principais Exibição de cardápio digital responsivo Gestão de
+              produtos, categorias e preços via painel administrativo Carrinho
+              de compras com integração de pedidos Controle de estoque básico e
+              métricas de vendas Banco de dados otimizado com Prisma ORM e
+              SQLite 🔹 Objetivo Oferecer uma solução prática e escalável para
+              estabelecimentos que buscam facilidade na gestão de pedidos e
+              melhor experiência do cliente, sem depender de plataformas
+              terceiras.
+            </p>
+            <CampoTag>
+              <span>React</span>
+              <span>Prisma</span>
+              <span>Tailwind</span>
+              <span>SQL</span>
+              <span>BANCO DE DADOS</span>
+              <span>CSS</span>
+            </CampoTag>
+            <IconB2>
+              <a href="https://menuden.vercel.app/">
+                <TituloDesc2>
+                  VEJA
+                  <img src={icon} />
+                </TituloDesc2>
+              </a>
+            </IconB2>
+          </DescricaoDiv>
+        </Content>
         <Content>
           <ImageP>
             <img src={RedeSocial} />
