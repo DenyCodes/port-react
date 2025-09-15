@@ -52,6 +52,7 @@ export const SobreText = styled.div`
   background-repeat: no-repeat;
   background-attachment: fixed;
   margin: 10%;
+  text-shadow: 2px 2px solid;
 `
 export const PicPerfil = styled.div`
   display: flex;
