@@ -28,14 +28,8 @@ const Header = (props: Props) => {
       <Navbar>
         <Ul>
           <Li>
-            <Links>
-              <a href="https://github.com/DenyCodes">GitHub</a>
-            </Links>
-            <Links>
-              <a href="#projetos" onClick={scrollToProjetos}>
-                Projetos
-              </a>
-            </Links>
+            <Links></Links>
+            <Links></Links>
           </Li>
         </Ul>
       </Navbar>

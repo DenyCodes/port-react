@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import fundo from '../../images/fundo.jpg'
+import fundo2 from '../../images/fundo.jpg'
 
 export const Container = styled.div`
   display: flex;
@@ -9,9 +10,6 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   align-self: stretch;
-  border: 1px solid #82000f;
-
-  background-image: url(${fundo});
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -47,6 +45,8 @@ export const Skils = styled.div`
   }
 `
 export const Icons = styled.div`
+  width: 100%;
+  background-color: #000;
   margin-top: 20px;
   display: flex;
   position: relative;

@@ -1,7 +1,6 @@
 import styled from 'styled-components'
-import fundo from '../../images/fundo3.jpg'
-import fundo2 from '../../images/fundo.jpg'
-
+import fundo from '../../images/fundo2.jpg'
+import fundo2 from '../../images/fundo3.jpg'
 export const Container = styled.div`
   display: flex;
   padding: 96px auto;
@@ -9,7 +8,6 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   align-self: stretch;
-  background-image: url(${fundo});
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -63,13 +61,10 @@ export const Titulo = styled.div`
   }
 `
 export const Head = styled.div`
+  padding: 10px;
   width: 100%;
+  background-color: #fff;
   border: 1px solid maroon;
-  background-image: url(${fundo2});
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   @media (max-width: 768px) {
     width: 100%;
   }
@@ -93,16 +88,15 @@ export const Subtitulo = styled.div`
   }
 `
 export const Content = styled.div`
-  border: 1px solid maroon;
+  display: flex;
+  width: 1152px;
+  align-items: flex-start;
+  border-radius: 12px;
   background-image: url(${fundo2});
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  display: flex;
-  width: 1152px;
-  align-items: flex-start;
-  border-radius: 12px;
 
   /* Drop Shadow/md */
   box-shadow:

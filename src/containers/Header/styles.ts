@@ -2,14 +2,8 @@ import styled from 'styled-components'
 import fundo from '../../images/fundo.jpg'
 
 export const Navbar = styled.div`
-  border: 1px solid maroon;
-  background-image: url(${fundo});
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  padding: 16px 80px;
   background-color: #000;
+  padding: 16px 80px;
   padding-top: 16px;
   margin-top: 0;
   justify-content: space-between;
@@ -84,8 +78,10 @@ export const Icon = styled.div`
 export const Links = styled.div`
   width: 10%;
   a {
-    color: white;
+    margin: 10%;
+    color: black;
     text-decoration: none;
-    background-color: #000;
+    background-color: #fff;
+    border-radius: 5px;
   }
 `

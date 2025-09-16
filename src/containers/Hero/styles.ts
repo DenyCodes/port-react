@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import fundo from '../../images/fundo3.jpg'
-import fundo2 from '../../images/fundo3.jpg'
+import fundo2 from '../../images/fundo2.jpg'
 export const Container = styled.div`
   max-width: 100%;
   width: auto;
@@ -33,7 +33,6 @@ export const Sobre = styled.div`
     color: #fff;
     padding: 2%;
     border-radius: 10px;
-    border: 1px solid maroon;
     background-image: url(${fundo2});
     background-size: cover;
     background-position: center;
@@ -45,8 +44,6 @@ export const Sobre = styled.div`
   }
 `
 export const SobreText = styled.div`
-  border: 1px solid maroon;
-  background-image: url(${fundo2});
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -61,8 +58,6 @@ export const PicPerfil = styled.div`
   width: 100%;
 `
 export const Pic = styled.img`
-  border: 2px solid maroon;
-
   height: 320px;
   border-radius: 50%;
   margin-bottom: 24px;

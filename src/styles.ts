@@ -1,5 +1,5 @@
 import styled, { createGlobalStyle } from 'styled-components'
-import fundo from './images/fundo2.jpg'
+import fundo from './images/fundo.jpg'
 
 import { Theme } from './themes/dark'
 

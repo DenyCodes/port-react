@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import denis from '../../images/eu.jpg'
 import { Container, Icones, Pic, PicPerfil, Sobre, SobreText } from './styles'
+import SpotifyPlayer from '../Sobre/SpotifyPlayer'
 
 const mensagens = [
   'Oi, Meu nome é Denis, tudo bem?!',
@@ -59,6 +60,7 @@ const Hero = () => {
       <PicPerfil>
         <Pic src={denis} />
       </PicPerfil>
+      <SpotifyPlayer />
     </Container>
   )
 }

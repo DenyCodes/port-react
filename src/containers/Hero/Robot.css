@@ -1,0 +1,26 @@
+.robot {
+  position: fixed;
+  bottom: 20px;
+  right: -100px; /* começa fora da tela */
+  animation: walk 15s linear infinite;
+  z-index: 2000;
+}
+
+.robot img {
+  height: 120px;
+}
+
+@keyframes walk {
+  0% {
+    right: -150px;
+    bottom: 20px;
+  }
+  50% {
+    right: 50%;
+    bottom: 40px; /* dá uma “subida” */
+  }
+  100% {
+    right: 110%;
+    bottom: 20px;
+  }
+}

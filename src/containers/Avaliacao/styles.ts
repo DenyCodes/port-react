@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import fundo from '../../images/fundo3.jpg'
-import fundo2 from '../../images/fundo2.jpg'
+import fundo2 from '../../images/fundo.jpg'
 
 export const Container = styled.div`
   margin-top: 10%;
@@ -26,8 +26,6 @@ export const MainCard = styled.div`
   align-items: center;
   gap: 48px;
   align-self: stretch;
-  border: 1px solid maroon;
-  background-image: url(${fundo2});
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
