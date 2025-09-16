@@ -9,11 +9,7 @@ export const Container = styled.div`
   justify-content: space-between;
   // align-items: flex-start;
   // align-self: stretch;
-  background-image: url(${fundo});
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-color: #fff;
   color: ${(props) => props.theme.corSecundaria};
   @media (max-width: 768px) {
     width: 100%;
@@ -26,18 +22,16 @@ export const Sobre = styled.div`
   max-width: 768px;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   gap: 48px;
   align-self: stretch;
   h1 {
-    color: #fff;
+    color: #000;
     padding: 2%;
     border-radius: 10px;
-    background-image: url(${fundo2});
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+  }
+  h4 {
+    color: #262626;
   }
   @media (max-width: 768px) {
     max-width: 100%;
@@ -58,9 +52,9 @@ export const PicPerfil = styled.div`
   width: 100%;
 `
 export const Pic = styled.img`
-  height: 320px;
-  border-radius: 50%;
-  margin-bottom: 24px;
+  width: 332px;
+  height: 498px;
+  border-radius: 17px;
   img {
     width: 280px;
     height: 320px;
