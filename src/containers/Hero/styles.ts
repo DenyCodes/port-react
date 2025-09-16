@@ -38,10 +38,7 @@ export const Sobre = styled.div`
   }
 `
 export const SobreText = styled.div`
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  text-align: center;
   margin: 10%;
   text-shadow: 2px 2px solid;
 `

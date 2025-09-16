@@ -6,7 +6,7 @@ const Hero = () => {
     <Container>
       <Sobre>
         <SobreText>
-          <h1>Olá Sou Denis Oliveira Dev Full Stack.</h1>
+          <h1>Olá Sou Denis Oliveira, Dev Full Stack.</h1>
           <h4>
             Crio aplicações modernas, rápidas, acessíveis e responsivas. Sempre
             com atenção à performance, usabilidade e qualidade de código

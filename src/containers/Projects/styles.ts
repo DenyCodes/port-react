@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import fundo from '../../images/fundo2.jpg'
+import fundo from '../../images/fundo.webp'
 import fundo2 from '../../images/fundo3.jpg'
 export const Container = styled.div`
   display: flex;
