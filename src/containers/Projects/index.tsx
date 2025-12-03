@@ -37,7 +37,7 @@ const projetos: Projeto[] = [
     imagem: menuden,
     descricao:
       'Sistema de pedidos online desenvolvido em Next.js 15, React 19, Prisma 6 e Tailwind CSS 4.',
-    link: 'https://menuden.vercel.app/'
+    link: 'https://menu-den.vercel.app/'
   },
   {
     nome: 'Rede Social',
