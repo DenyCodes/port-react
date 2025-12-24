@@ -21,23 +21,69 @@ import disney from '../../images/disney.png'
 import icon from '../../images/Iconb.svg'
 import RedeSocial from '../../images/rede-social.png'
 import menuden from '../../images/menuden.png'
-
+import debourne from '../../images/debourne.png'
+import playtecno from '../../images/playtecno.png'
 type Projeto = {
   nome: string
   linguagem: string[]
   imagem: string
   descricao: string
   link: string
+  link2?: string
 }
 
 const projetos: Projeto[] = [
   {
+    nome: 'Debourne',
+    linguagem: [
+      'React',
+      'Prisma',
+      'Tailwind',
+      'Auth',
+      'Autenticação de usuarios',
+      'integração com banco de dados',
+      'PostgresSQL',
+      'Supabase'
+    ],
+    imagem: debourne,
+    descricao:
+      'Sistema completo de e-commerce voltado para o nicho gastronômico. O projeto abrange desde a listagem de restaurantes até o checkout, integrando lógica de carrinho de compras e simulação de fluxo de entrega. A interface foi construída seguindo rigorosamente o Design System proposto no Figma, resultando em uma aplicação React robusta, com componentes estilizados e foco na experiência de compra do usuário final.',
+    link: 'https://debourne.com.br/'
+  },
+  {
     nome: 'Menuden',
-    linguagem: ['React', 'Prisma', 'Tailwind'],
+    linguagem: [
+      'React',
+      'Prisma',
+      'Tailwind',
+      'Auth',
+      'Autenticação de usuarios',
+      'integração com banco de dados',
+      'PostgresSQL',
+      'Supabase'
+    ],
     imagem: menuden,
     descricao:
-      'Sistema de pedidos online desenvolvido em Next.js 15, React 19, Prisma 6 e Tailwind CSS 4.',
-    link: 'https://menu-den.vercel.app/'
+      'Plataforma digital para gestão de cardápios e pedidos online. Desenvolvida em React.js, a aplicação funciona como um sistema dinâmico onde o usuário pode visualizar produtos e gerenciar o carrinho de compras. O foco do desenvolvimento foi a lógica de estado global para manipulação de pedidos e a criação de uma interface administrativa intuitiva para o gerenciamento de produtos.',
+    link: 'https://menuden.com.br/home/'
+  },
+  {
+    nome: 'PlayTecno',
+    linguagem: [
+      'React',
+      'Prisma',
+      'Tailwind',
+      'Auth',
+      'Autenticação de usuarios',
+      'integração com banco de dados',
+      'PostgresSQL',
+      'Supabase'
+    ],
+    imagem: playtecno,
+    descricao:
+      'esse projeto eu reuno todos os trabalhos que realizei e projetos de alguns clientes !! Desenvolvimento de interface web completa com foco em Fidelidade Visual (Pixel Perfect) a partir de protótipos de alta fidelidade no Figma. O projeto utiliza React.js com uma arquitetura moderna baseada em componentes reutilizáveis e rotas dinâmicas (React Router), aplicando as melhores práticas de SEO, performance e UX/UI Design para garantir uma navegação fluida e responsiva, com integração de dados, authenticação ',
+    link: 'https://playtecno.com/',
+    link2: 'https://playtecno.com.br/'
   },
   {
     nome: 'Rede Social',
