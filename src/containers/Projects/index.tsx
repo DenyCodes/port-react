@@ -23,6 +23,7 @@ import RedeSocial from '../../images/rede-social.png'
 import menuden from '../../images/menuden.png'
 import debourne from '../../images/debourne.png'
 import playtecno from '../../images/playtecno.png'
+import alfaiataria from '../../images/alfaiataria.png'
 type Projeto = {
   nome: string
   linguagem: string[]
@@ -49,6 +50,13 @@ const projetos: Projeto[] = [
     descricao:
       'Sistema completo de e-commerce voltado para o nicho gastronômico. O projeto abrange desde a listagem de restaurantes até o checkout, integrando lógica de carrinho de compras e simulação de fluxo de entrega. A interface foi construída seguindo rigorosamente o Design System proposto no Figma, resultando em uma aplicação React robusta, com componentes estilizados e foco na experiência de compra do usuário final.',
     link: 'https://debourne.com.br/'
+  },
+  {
+    nome: 'Alfaiataria',
+    linguagem: ['React', 'Tailwind'],
+    imagem: alfaiataria,
+    descricao: 'Loja de ternos a mão, alfaiataria',
+    link: 'https://terno-loja.vercel.app/'
   },
   {
     nome: 'Menuden',
