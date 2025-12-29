@@ -94,41 +94,12 @@ const projetos: Projeto[] = [
     link2: 'https://playtecno.com.br/'
   },
   {
-    nome: 'Rede Social',
-    linguagem: ['Python', 'Django', 'PostgreSQL'],
-    imagem: RedeSocial,
-    descricao:
-      'Aplicação de rede social do zero utilizando Django, autenticação, posts e feed em tempo real.',
-    link: 'https://social-python.up.railway.app/'
-  },
-  {
     nome: 'Geolocal',
     linguagem: ['JavaScript', 'Google API'],
     imagem: geolocal,
     descricao:
       'Módulo de geolocalização com Google Maps API, rotas e marcadores personalizados.',
     link: 'https://www.youtube.com/watch?v=yz_hCnl1Yko/'
-  },
-  {
-    nome: 'Efood',
-    linguagem: ['TypeScript', 'React'],
-    imagem: efood,
-    descricao: 'Aplicação de pedidos de comida com React + TypeScript.',
-    link: 'https://efood-orpin.vercel.app/'
-  },
-  {
-    nome: 'Eplay',
-    linguagem: ['React', 'TypeScript'],
-    imagem: eplay,
-    descricao: 'Plataforma de streaming de jogos online.',
-    link: 'https://eplay-one.vercel.app/'
-  },
-  {
-    nome: 'Disney+ Clone',
-    linguagem: ['React', 'Scss'],
-    imagem: disney,
-    descricao: 'Clone do Disney+ feito com React e SCSS.',
-    link: 'https://disney-ooya.vercel.app/'
   }
 ]
 
