@@ -1,6 +1,5 @@
-export type Lang = 'en' | 'pt-BR' // << export
+export type Lang = 'en' | 'pt-BR'
 
-// imports dos dicionários
 import { en } from '../locales/en'
 import { ptBR } from '../locales/ptBR'
 
@@ -13,28 +12,34 @@ const DICTS: Record<Lang, Record<string, string>> = {
 
 function getQueryLang(): Lang | null {
   try {
-    const p = new URLSearchParams(window.location.search)
-    const l = p.get('lang')
-    if (l === 'en' || l === 'pt-BR') return l
+    const params = new URLSearchParams(window.location.search)
+    const lang = params.get('lang')
+
+    if (lang === 'en' || lang === 'pt-BR') {
+      return lang
+    }
   } catch {
-    /* empty */
+    return null
   }
+
   return null
 }
 
 function detectInitialLang(): Lang {
-  // 1) escolha anterior
   const saved = localStorage.getItem(STORAGE_KEY)
-  if (saved === 'en' || saved === 'pt-BR') return saved as Lang
 
-  // 2) querystring
-  const q = getQueryLang()
-  if (q) return q
+  if (saved === 'en' || saved === 'pt-BR') {
+    return saved
+  }
 
-  // 3) navegador (ex.: pt-BR, en-US)
-  const nav = navigator.language || (navigator as any).userLanguage || 'pt-BR'
-  if (nav.toLowerCase().startsWith('en')) return 'en'
-  return 'pt-BR'
+  const queryLang = getQueryLang()
+
+  if (queryLang) {
+    return queryLang
+  }
+
+  const browserLang = navigator.language || 'pt-BR'
+  return browserLang.toLowerCase().startsWith('en') ? 'en' : 'pt-BR'
 }
 
 let currentLang: Lang = detectInitialLang()
@@ -45,13 +50,12 @@ function setHtmlLang(lang: Lang) {
 
 setHtmlLang(currentLang)
 
-// listeners para atualizar componentes quando o idioma for trocado
 type Listener = (lang: Lang) => void
 const listeners = new Set<Listener>()
 
-export function onLangChange(cb: Listener) {
-  listeners.add(cb)
-  return () => listeners.delete(cb)
+export function onLangChange(callback: Listener) {
+  listeners.add(callback)
+  return () => listeners.delete(callback)
 }
 
 export function getLang(): Lang {
@@ -59,19 +63,21 @@ export function getLang(): Lang {
 }
 
 export function setLang(lang: Lang) {
-  if (lang === currentLang) return
+  if (lang === currentLang) {
+    return
+  }
+
   currentLang = lang
   localStorage.setItem(STORAGE_KEY, lang)
   setHtmlLang(lang)
-  listeners.forEach((fn) => fn(lang))
+  listeners.forEach((listener) => listener(lang))
 }
 
 export function t(key: string): string {
-  const dict = DICTS[currentLang] || {}
-  return dict[key] ?? key
+  const dictionary = DICTS[currentLang]
+  return dictionary[key] ?? key
 }
 
-// helper para alternar entre en / pt-BR
 export function toggleLang() {
   setLang(currentLang === 'en' ? 'pt-BR' : 'en')
 }
