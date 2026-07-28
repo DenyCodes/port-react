@@ -1,165 +1,94 @@
 import styled from 'styled-components'
-import fundo from '../../images/fundo3.jpg'
-import fundo2 from '../../images/fundo.jpg'
 
-export const Container = styled.div`
-  margin-top: 10%;
-  display: flex;
+export const Container = styled.section`
   padding: 96px 80px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-self: stretch;
-  border: 1px solid maroon;
-  background-image: url(${fundo});
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background: #0d1117;
+  color: #f9fafb;
+
+  @media (max-width: 900px) {
+    padding: 72px 24px;
+  }
 `
+
 export const MainCard = styled.div`
-  color: #fff;
+  width: min(1180px, 100%);
+  margin: 0 auto;
   display: flex;
-  padding: 0px 32px;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 48px;
-  align-self: stretch;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  gap: 40px;
 `
+
 export const Head = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 16px;
-  align-self: stretch;
-`
-export const Span = styled.span`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-self: stretch;
-  h1 {
-    display: flex;
-    padding: 4px 20px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 12px;
-    background: var(--Gray-200, #e5e7eb);
-    color: var(--Gray-600, #4b5563);
-
-    /* Body3/Medium - All */
-    font-family: Inter;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 20px; /* 142.857% */
-  }
-`
-export const SpanDesc = styled.span`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-self: stretch;
-  h2 {
-    max-width: 576px;
-    align-self: stretch;
-    color: var(--Gray-600, #e5e7eb);
-    text-align: center;
-
-    /* Subtitle/Normal - Desktop */
-    font-family: Inter;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 28px; /* 140% */
-  }
-`
-export const Cards = styled.div`
-  display: flex;
-  align-items: flex-start;
-  gap: 48px;
-  align-self: stretch;
-  flex-wrap: wrap;
-  border-radius: 12px;
-`
-export const Card = styled.div`
-  display: flex;
-  min-width: 300px;
-  padding: 48px;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
   gap: 24px;
-  flex: 1 0 0;
-  align-self: stretch;
-  border-radius: 12px;
-  background: var(--Gray-Default, #fff);
-  border: 4px solid maroon;
+  align-items: end;
 
-  /* Drop Shadow/md */
-  box-shadow:
-    0px 4px 3px 0px rgba(0, 0, 0, 0.07),
-    0px 2px 2px 0px rgba(0, 0, 0, 0.06);
-  p {
-    color: var(--Gray-600, #4b5563);
-    /* Body2/Normal - All */
-    font-family: Inter;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px; /* 150% */
+  @media (max-width: 760px) {
+    grid-template-columns: 1fr;
   }
 `
-export const IconDiv = styled.div`
-  display: flex;
-  width: 64px;
-  height: 64px;
-  padding: 20px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  border-radius: 64px;
-  background: #9ca3af;
-  img {
-    width: 40px;
-    height: 40px;
-    flex-shrink: 0;
+
+export const Span = styled.span`
+  h1 {
+    font-size: clamp(2rem, 4vw, 3.8rem);
+    line-height: 1;
+    letter-spacing: -0.04em;
   }
 `
-export const NameP = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 4px;
-  align-self: stretch;
+
+export const SpanDesc = styled.span`
   h2 {
-    align-self: stretch;
-    color: var(--Gray-900, #111827);
-    text-align: center;
-
-    /* Subtitle/Semi Bold - Desktop */
-    font-family: Inter;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 28px; /* 140% */
-  }
-  h3 {
-    align-self: stretch;
-    color: var(--Gray-600, #4b5563);
-    text-align: center;
-
-    /* Body3/Normal - All */
-    font-family: Inter;
-    font-size: 14px;
-    font-style: normal;
+    color: #94a3b8;
+    font-size: 1rem;
     font-weight: 400;
-    line-height: 20px; /* 142.857% */
+    line-height: 1.7;
   }
 `
+
+export const Cards = styled.div`
+  display: grid;
+  gap: 16px;
+`
+
+export const Card = styled.article`
+  display: grid;
+  grid-template-columns: minmax(230px, 0.7fr) 1.3fr;
+  gap: 32px;
+  padding: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 18px;
+  background: #151b24;
+
+  p {
+    color: #cbd5e1;
+    line-height: 1.7;
+  }
+
+  @media (max-width: 700px) {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+`
+
+export const NameP = styled.div`
+  h2 {
+    font-size: 1.15rem;
+    color: #f9fafb;
+  }
+
+  h3 {
+    margin-top: 5px;
+    color: #d8ff57;
+    font-size: 0.95rem;
+  }
+
+  span {
+    display: block;
+    margin-top: 10px;
+    color: #64748b;
+    font-size: 0.88rem;
+  }
+`
+
+export const IconDiv = styled.div``

@@ -1,23 +1,30 @@
-import styled, { createGlobalStyle } from 'styled-components'
-import fundo from './images/fundo.jpg'
-
-import { Theme } from './themes/dark'
+import { createGlobalStyle } from 'styled-components'
 
 const EstiloGlobal = createGlobalStyle`
   * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Inter', sans-serif;
-    list-style: none;
-    overflow-x: hidden;
+  }
+
+  html {
+    scroll-behavior: smooth;
   }
 
   body {
-      background-image: url(${fundo});
+    min-width: 320px;
+    overflow-x: hidden;
+    background: #0d1117;
+  }
 
-    @media (max-width: 900px) {
+  button,
+  a {
+    font: inherit;
+  }
+
+  img {
     max-width: 100%;
-    }
   }
 `
 
