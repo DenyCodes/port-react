@@ -1,5 +1,4 @@
-import { ThemeProvider, DefaultTheme } from 'styled-components'
-import { useMemo, useState } from 'react'
+import { ThemeProvider } from 'styled-components'
 
 import EstiloGlobal from './styles'
 import Header from './containers/Header'
@@ -9,25 +8,13 @@ import Avaliacao from './containers/Avaliacao'
 import Skill from './containers/Skill'
 import Footer from './containers/Footer'
 
-import temaLight from './themes/light'
 import temaDark from './themes/dark'
 
 function App() {
-  const [estaUsandoTemaDark, setEstaUsandoTemaDark] = useState<boolean>(true)
-
-  function trocaTema() {
-    setEstaUsandoTemaDark((prev) => !prev)
-  }
-
-  const theme: DefaultTheme = useMemo(
-    () => (estaUsandoTemaDark ? temaDark : temaLight),
-    [estaUsandoTemaDark]
-  )
-
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={temaDark}>
       <EstiloGlobal />
-      <Header trocaTema={trocaTema} />
+      <Header />
       <main>
         <Hero />
         <Projects />

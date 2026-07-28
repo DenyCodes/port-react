@@ -78,7 +78,10 @@ const Projects = () => {
               <h1>Projetos em destaque</h1>
             </Titulo>
             <Subtitulo>
-              <p>Produtos e soluções que demonstram experiência real de desenvolvimento Full Stack.</p>
+              <p>
+                Produtos e soluções que demonstram experiência real de
+                desenvolvimento Full Stack.
+              </p>
               <div>
                 {linguagens.map((lang) => (
                   <button
@@ -90,7 +93,10 @@ const Projects = () => {
                       marginTop: '12px',
                       padding: '8px 14px',
                       borderRadius: '999px',
-                      border: filtro === lang ? '2px solid #d8ff57' : '1px solid #64748b',
+                      border:
+                        filtro === lang
+                          ? '2px solid #d8ff57'
+                          : '1px solid #64748b',
                       background: filtro === lang ? '#d8ff57' : '#111827',
                       color: filtro === lang ? '#111827' : '#f8fafc',
                       cursor: 'pointer'
@@ -106,7 +112,10 @@ const Projects = () => {
           {projetosFiltrados.map((projeto) => (
             <Content key={projeto.nome}>
               <ImageP>
-                <img src={projeto.imagem} alt={`Interface do projeto ${projeto.nome}`} />
+                <img
+                  src={projeto.imagem}
+                  alt={`Interface do projeto ${projeto.nome}`}
+                />
               </ImageP>
               <DescricaoDiv>
                 <Titulo>{projeto.nome}</Titulo>
@@ -117,7 +126,11 @@ const Projects = () => {
                   ))}
                 </CampoTag>
                 <IconB2>
-                  <a href={projeto.link} target="_blank" rel="noopener noreferrer">
+                  <a
+                    href={projeto.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <TituloDesc2>
                       Ver projeto
                       <img src={icon} alt="" aria-hidden="true" />

@@ -1,17 +1,13 @@
 import { BottonCV, Brand, Li, Links, Navbar, Ul } from './styles'
 
-type Props = {
-  trocaTema: () => void
-}
-
-const Header = (_props: Props) => {
+const Header = () => {
   const scrollTo = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
   }
 
   return (
     <Navbar>
-      <Brand onClick={() => scrollTo('inicio')}>
+      <Brand type="button" onClick={() => scrollTo('inicio')}>
         denis<span>.dev</span>
       </Brand>
 

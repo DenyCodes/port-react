@@ -1,4 +1,13 @@
-import { Card, Cards, Container, Head, MainCard, NameP, Span, SpanDesc } from './styles'
+import {
+  Card,
+  Cards,
+  Container,
+  Head,
+  MainCard,
+  NameP,
+  Span,
+  SpanDesc
+} from './styles'
 
 const experiences = [
   {
@@ -32,7 +41,10 @@ const Avaliacao = () => (
           <h1>Experiência profissional</h1>
         </Span>
         <SpanDesc>
-          <h2>Atuação em desenvolvimento, automação, integrações e sistemas em produção.</h2>
+          <h2>
+            Atuação em desenvolvimento, automação, integrações e sistemas em
+            produção.
+          </h2>
         </SpanDesc>
       </Head>
 
@@ -50,7 +62,8 @@ const Avaliacao = () => (
       </Cards>
 
       <p>
-        Formação: Sistemas de Informação — Estácio · Desenvolvimento Full Stack — EBAC · Inglês avançado
+        Formação: Sistemas de Informação — Estácio · Desenvolvimento Full Stack
+        — EBAC · Inglês avançado
       </p>
     </MainCard>
   </Container>

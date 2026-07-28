@@ -1,67 +1,68 @@
 import styled from 'styled-components'
-import fundo from '../../images/fundo.jpg'
-import fundo2 from '../../images/fundo.jpg'
 
-export const Container = styled.div`
-  display: flex;
+export const Container = styled.section`
   padding: 96px 80px;
-  color: #fff;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-self: stretch;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  @media (max-width: 768px) {
-    width: 100%;
+  background-color: #0d1117;
+  color: #f9fafb;
+
+  @media (max-width: 900px) {
+    padding: 72px 24px;
   }
 `
+
 export const Skils = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 16px;
-  align-self: stretch;
-  p {
-    color: ${(props) => props.theme.corSecundaria};
-    margin-left: 20%;
-  }
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+
   h1 {
-    margin-left: 47%;
-    border-radius: 12px;
-    color: var(--Gray-600, #4b5563);
-    /* Body3/Medium - All */
-    font-family: Inter;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 20px; /* 142.857% */
-    background: var(--Gray-200, #e5e7eb);
+    font-size: clamp(2rem, 4vw, 3.8rem);
+    line-height: 1;
+    letter-spacing: -0.04em;
   }
-  @media (max-width: 768px) {
-    width: 100%;
+
+  p {
+    max-width: 700px;
+    margin-top: 18px;
+    color: #94a3b8;
+    line-height: 1.7;
   }
 `
+
 export const Icons = styled.div`
   width: 100%;
-  background-color: #000;
-  margin-top: 20px;
-  display: flex;
-  position: relative;
-  gap: 8px;
-  img {
-    width: 50px;
+  max-width: 1180px;
+  margin: 40px auto 0;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+
+  @media (max-width: 800px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-  @media (max-width: 768px) {
-    width: 100%;
-    display: block;
+
+  @media (max-width: 460px) {
+    grid-template-columns: 1fr;
   }
 `
+
 export const IcDiv = styled.div`
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
+  min-height: 120px;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  background-color: #151b24;
+  color: #cbd5e1;
+  font-weight: 600;
+
+  img {
+    width: 44px;
+    height: 44px;
+    object-fit: contain;
+  }
 `
