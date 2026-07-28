@@ -18,7 +18,9 @@ const Hero = () => {
         <Sobre>
           <SobreText>
             <Eyebrow>Disponível para oportunidades profissionais</Eyebrow>
-            <h1>Desenvolvedor Full Stack focado em aplicações web completas.</h1>
+            <h1>
+              Desenvolvedor Full Stack focado em aplicações web completas.
+            </h1>
             <p>
               Desenvolvo interfaces, APIs, automações e integrações utilizando
               React, TypeScript, JavaScript, Python, PHP, SQL e Supabase.
