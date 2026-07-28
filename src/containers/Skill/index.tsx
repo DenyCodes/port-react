@@ -24,7 +24,10 @@ const Skill = () => (
     <div>
       <Skils>
         <h1>Stack técnica</h1>
-        <p>Tecnologias utilizadas em aplicações, integrações e sistemas em produção.</p>
+        <p>
+          Tecnologias utilizadas em aplicações, integrações e sistemas em
+          produção.
+        </p>
       </Skils>
       <Icons>
         {skills.map(([icon, name]) => (
