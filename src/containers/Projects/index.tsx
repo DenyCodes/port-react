@@ -6,143 +6,93 @@ import {
   DescricaoDiv,
   Div,
   Head,
-  IconB,
   IconB2,
   ImageP,
   Subtitulo,
   Titulo,
-  TituloDesc,
   TituloDesc2
 } from './styles'
 import geolocal from '../../images/geolocal.png'
-import efood from '../../images/efood.png'
-import eplay from '../../images/eplay.png'
-import disney from '../../images/disney.png'
 import icon from '../../images/Iconb.svg'
-import RedeSocial from '../../images/rede-social.png'
 import menuden from '../../images/menuden.png'
 import debourne from '../../images/debourne.png'
 import playtecno from '../../images/playtecno.png'
-import alfaiataria from '../../images/alfaiataria.png'
+
 type Projeto = {
   nome: string
   linguagem: string[]
   imagem: string
   descricao: string
   link: string
-  link2?: string
 }
 
 const projetos: Projeto[] = [
   {
+    nome: 'MenuDen',
+    linguagem: ['React', 'TypeScript', 'Supabase', 'PostgreSQL', 'Meta API'],
+    imagem: menuden,
+    descricao:
+      'Plataforma SaaS para gestão de cardápios, pedidos, clientes e operações. Implementei autenticação, perfis de acesso, painel administrativo, regras de negócio e integrações relacionadas ao atendimento via WhatsApp.',
+    link: 'https://menuden.com.br/'
+  },
+  {
     nome: 'Debourne',
-    linguagem: [
-      'React',
-      'Prisma',
-      'Tailwind',
-      'Auth',
-      'Autenticação de usuarios',
-      'integração com banco de dados',
-      'PostgresSQL',
-      'Supabase'
-    ],
+    linguagem: ['React', 'TypeScript', 'Tailwind', 'PostgreSQL', 'Supabase'],
     imagem: debourne,
     descricao:
-      'Sistema completo de e-commerce voltado para o nicho gastronômico. O projeto abrange desde a listagem de restaurantes até o checkout, integrando lógica de carrinho de compras e simulação de fluxo de entrega. A interface foi construída seguindo rigorosamente o Design System proposto no Figma, resultando em uma aplicação React robusta, com componentes estilizados e foco na experiência de compra do usuário final.',
+      'Marketplace com vitrine, carrinho, autenticação e painel para lojistas. O trabalho envolveu construção de componentes reutilizáveis, integração com banco de dados e desenvolvimento da experiência de compra.',
     link: 'https://debourne.com.br/'
   },
   {
-    nome: 'Alfaiataria',
-    linguagem: ['React', 'Tailwind'],
-    imagem: alfaiataria,
-    descricao: 'Loja de ternos a mão, alfaiataria',
-    link: 'https://terno-loja.vercel.app/'
-  },
-  {
-    nome: 'Menuden',
-    linguagem: [
-      'React',
-      'Prisma',
-      'Tailwind',
-      'Auth',
-      'Autenticação de usuarios',
-      'integração com banco de dados',
-      'PostgresSQL',
-      'Supabase'
-    ],
-    imagem: menuden,
-    descricao:
-      'Plataforma digital para gestão de cardápios e pedidos online. Desenvolvida em React.js, a aplicação funciona como um sistema dinâmico onde o usuário pode visualizar produtos e gerenciar o carrinho de compras. O foco do desenvolvimento foi a lógica de estado global para manipulação de pedidos e a criação de uma interface administrativa intuitiva para o gerenciamento de produtos.',
-    link: 'https://menuden.com.br/home/'
-  },
-  {
     nome: 'PlayTecno',
-    linguagem: [
-      'React',
-      'Prisma',
-      'Tailwind',
-      'Auth',
-      'Autenticação de usuarios',
-      'integração com banco de dados',
-      'PostgresSQL',
-      'Supabase'
-    ],
+    linguagem: ['React', 'TypeScript', 'APIs REST', 'Automação', 'E-commerce'],
     imagem: playtecno,
     descricao:
-      'esse projeto eu reuno todos os trabalhos que realizei e projetos de alguns clientes !! Desenvolvimento de interface web completa com foco em Fidelidade Visual (Pixel Perfect) a partir de protótipos de alta fidelidade no Figma. O projeto utiliza React.js com uma arquitetura moderna baseada em componentes reutilizáveis e rotas dinâmicas (React Router), aplicando as melhores práticas de SEO, performance e UX/UI Design para garantir uma navegação fluida e responsiva, com integração de dados, authenticação ',
-    link: 'https://playtecno.com/',
-    link2: 'https://playtecno.com.br/'
+      'Projeto independente para produtos digitais, automações e soluções de e-commerce. Atuação no levantamento de requisitos, modelagem de dados, definição de integrações e implementação ponta a ponta.',
+    link: 'https://playtecno.com.br/'
   },
   {
     nome: 'Geolocal',
-    linguagem: ['JavaScript', 'Google API'],
+    linguagem: ['JavaScript', 'Google Maps API', 'Geolocalização'],
     imagem: geolocal,
     descricao:
-      'Módulo de geolocalização com Google Maps API, rotas e marcadores personalizados.',
-    link: 'https://www.youtube.com/watch?v=yz_hCnl1Yko/'
+      'Módulo de geolocalização com rotas, marcadores personalizados e recursos baseados na posição do usuário utilizando Google Maps API.',
+    link: 'https://www.youtube.com/watch?v=yz_hCnl1Yko'
   }
 ]
 
 const Projects = () => {
   const [filtro, setFiltro] = useState<string>('Todos')
-
-  const linguagens = [
-    'Todos',
-    'React',
-    'TypeScript',
-    'Python',
-    'Django',
-    'JavaScript'
-  ]
-
+  const linguagens = ['Todos', 'React', 'TypeScript', 'JavaScript']
   const projetosFiltrados =
     filtro === 'Todos'
       ? projetos
-      : projetos.filter((p) => p.linguagem.includes(filtro))
+      : projetos.filter((projeto) => projeto.linguagem.includes(filtro))
 
   return (
-    <Container id="Projetos">
+    <Container>
       <section id="projetos">
         <Div>
           <Head>
             <Titulo>
-              <h1>Projetos</h1>
+              <h1>Projetos em destaque</h1>
             </Titulo>
             <Subtitulo>
-              <p>Alguns dos projetos notáveis que construí:</p>
+              <p>Produtos e soluções que demonstram experiência real de desenvolvimento Full Stack.</p>
               <div>
                 {linguagens.map((lang) => (
                   <button
                     key={lang}
                     onClick={() => setFiltro(lang)}
+                    aria-pressed={filtro === lang}
                     style={{
                       marginRight: '8px',
-                      padding: '6px 12px',
-                      borderRadius: '8px',
-                      border:
-                        filtro === lang ? '2px solid red' : '1px solid gray',
-                      background: filtro === lang ? '#222' : '#fff',
-                      color: filtro === lang ? '#fff' : '#000',
+                      marginTop: '12px',
+                      padding: '8px 14px',
+                      borderRadius: '999px',
+                      border: filtro === lang ? '2px solid #d8ff57' : '1px solid #64748b',
+                      background: filtro === lang ? '#d8ff57' : '#111827',
+                      color: filtro === lang ? '#111827' : '#f8fafc',
                       cursor: 'pointer'
                     }}
                   >
@@ -156,7 +106,7 @@ const Projects = () => {
           {projetosFiltrados.map((projeto) => (
             <Content key={projeto.nome}>
               <ImageP>
-                <img src={projeto.imagem} />
+                <img src={projeto.imagem} alt={`Interface do projeto ${projeto.nome}`} />
               </ImageP>
               <DescricaoDiv>
                 <Titulo>{projeto.nome}</Titulo>
@@ -167,14 +117,10 @@ const Projects = () => {
                   ))}
                 </CampoTag>
                 <IconB2>
-                  <a
-                    href={projeto.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                  <a href={projeto.link} target="_blank" rel="noopener noreferrer">
                     <TituloDesc2>
-                      VEJA
-                      <img src={icon} />
+                      Ver projeto
+                      <img src={icon} alt="" aria-hidden="true" />
                     </TituloDesc2>
                   </a>
                 </IconB2>
