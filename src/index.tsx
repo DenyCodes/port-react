@@ -1,10 +1,15 @@
-import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
 import { LanguageProvider } from './LanguageProvider'
-import './lib/i18n-lite' // garante inicialização
+import './lib/i18n-lite'
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
+const rootElement = document.getElementById('root')
+
+if (!rootElement) {
+  throw new Error('Elemento raiz #root não encontrado')
+}
+
+ReactDOM.createRoot(rootElement).render(
   <LanguageProvider>
     <App />
   </LanguageProvider>
