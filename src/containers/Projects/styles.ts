@@ -1,208 +1,134 @@
 import styled from 'styled-components'
-import fundo from '../../images/fundo.webp'
-import fundo2 from '../../images/fundo3.jpg'
-export const Container = styled.div`
-  display: flex;
-  padding: 96px auto;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-self: stretch;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  @media (max-width: 768px) {
-    width: 100%;
-    padding: 80px;
+
+export const Container = styled.section`
+  padding: 96px 80px;
+  background: #111827;
+  color: #f9fafb;
+
+  @media (max-width: 900px) {
+    padding: 72px 24px;
   }
 `
-export const TituloDesc = styled.div`
-  background-color: #ffcd37;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`
-export const TituloDesc2 = styled.div`
-  display: flex;
-  background: black;
-  justify-content: center;
-  align-items: center;
-  color: #007bff;
-`
+
 export const Div = styled.div`
+  width: min(1180px, 100%);
+  margin: 0 auto;
   display: flex;
-  padding: 0px 32px;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 48px;
-  align-self: stretch;
-  @media (max-width: 768px) {
-    width: 100%;
-  }
+  gap: 32px;
 `
+
+export const Head = styled.header`
+  padding-bottom: 8px;
+`
+
 export const Titulo = styled.div`
-  display: flex;
-  padding: 4px 20px;
-  justify-content: center;
-  align-items: center;
-  border-radius: 12px;
-  background: var(--Gray-200, #e5e7eb);
   h1 {
-    color: var(--Gray-600, #4b5563);
+    font-size: clamp(2rem, 4vw, 3.8rem);
+    line-height: 1;
+    letter-spacing: -0.04em;
+  }
+`
 
-    /* Body3/Medium - All */
-    font-family: Inter;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 20px; /* 142.857% */
-  }
-`
-export const Head = styled.div`
-  padding: 10px;
-  width: 100%;
-  background-color: #fff;
-  border: 1px solid maroon;
-  @media (max-width: 768px) {
-    width: 100%;
-  }
-`
 export const Subtitulo = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  p {
-    max-width: 576px;
-    color: #fff;
-    text-align: center;
+  margin-top: 18px;
 
-    /* Subtitle/Normal - Desktop */
-    font-family: Inter;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 28px; /* 140% */
+  p {
+    max-width: 700px;
+    color: #94a3b8;
+    font-size: 1rem;
+    line-height: 1.7;
   }
 `
-export const Content = styled.div`
-  display: flex;
-  width: 1152px;
-  align-items: flex-start;
-  border-radius: 12px;
-  background-image: url(${fundo2});
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
 
-  /* Drop Shadow/md */
-  box-shadow:
-    0px 4px 3px 0px rgba(0, 0, 0, 0.07),
-    0px 2px 2px 0px rgba(0, 0, 0, 0.06);
+export const Content = styled.article`
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 22px;
+  background: #151b24;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.22);
+
+  @media (max-width: 820px) {
+    grid-template-columns: 1fr;
+  }
 `
+
 export const ImageP = styled.div`
-  display: flex;
-  padding: 48px;
-  justify-content: center;
-  align-items: center;
-  flex: 1 0 0;
-  align-self: stretch;
-  border-radius: 12px 0px 0px 12px;
-  border-right: 1px solid var(--Gray-100, #f3f4f6);
-  background: var(--Gray-50, #f9fafb);
+  min-height: 340px;
+  background: #0d1117;
+
   img {
-    height: 384px;
-    flex: 1 0 0;
-    border-radius: 12px;
-    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
-
-    /* Drop Shadow/lg */
-    box-shadow:
-      0px 4px 3px 0px rgba(0, 0, 0, 0.1),
-      0px 10px 8px 0px rgba(0, 0, 0, 0.04);
+    width: 100%;
+    height: 100%;
+    min-height: 340px;
+    display: block;
+    object-fit: cover;
   }
 `
+
 export const DescricaoDiv = styled.div`
+  padding: 40px;
   display: flex;
-  padding: 48px;
   flex-direction: column;
-  align-items: center;
-  gap: 24px;
-  flex: 1 0 0;
-  align-self: stretch;
-  border-radius: 12px 0px 0px 12px;
-  h2 {
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 1;
-    align-self: stretch;
-  }
-  p {
-    align-self: stretch;
-    color: ${(props) => props.theme.corDeFundoBotao};
+  align-items: flex-start;
+  justify-content: center;
+  gap: 22px;
 
-    /* Body2/Normal - All */
-    font-family: Inter;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px; /* 150% */
+  > ${Titulo} {
+    padding: 0;
   }
-  span {
-    display: flex;
-    align-items: center;
-    align-content: center;
-    gap: 8px;
-    align-self: stretch;
-    flex-wrap: wrap;
+
+  > ${Titulo}::first-line {
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+
+  p {
+    color: #cbd5e1;
+    line-height: 1.75;
+  }
+
+  @media (max-width: 600px) {
+    padding: 28px;
   }
 `
+
 export const CampoTag = styled.div`
   display: flex;
-  align-items: center;
-  align-content: center;
-  gap: 8px;
-  align-self: stretch;
   flex-wrap: wrap;
+  gap: 8px;
+
   span {
-    display: flex;
-    padding: 4px 20px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 12px;
-    background: var(--Gray-200, #e5e7eb);
+    padding: 7px 11px;
+    border: 1px solid rgba(216, 255, 87, 0.2);
+    border-radius: 999px;
+    background: rgba(216, 255, 87, 0.06);
+    color: #d8ff57;
+    font-size: 0.8rem;
   }
 `
-export const IconB = styled.div`
-  background-color: #ffcd37;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  align-self: stretch;
-  color: #fff;
-  a {
-    text-decoration: none;
-    color: #000;
-  }
-`
+
 export const IconB2 = styled.div`
-  background-color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  align-self: stretch;
-  color: #fff;
   a {
+    display: inline-flex;
     text-decoration: none;
-    color: #000;
+  }
+`
+
+export const TituloDesc2 = styled.span`
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 11px 17px;
+  border-radius: 999px;
+  background: #d8ff57;
+  color: #10130d;
+  font-weight: 700;
+
+  img {
+    width: 16px;
+    height: 16px;
   }
 `
