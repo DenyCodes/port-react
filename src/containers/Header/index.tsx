@@ -1,39 +1,38 @@
-import { Navbar, Li, Banner, BottonCV, Icon, Ul, ligt, Links } from './styles'
-import Background from '../../images/Denis Oliveira (2).png'
-import light from '../../images/Icon.svg'
-import DownloadButton from '../../components/Download'
-import Lightmode from '@mui/icons-material/LightMode'
-import { useLanguage } from '../../LanguageProvider'
+import { BottonCV, Brand, Li, Links, Navbar, Ul } from './styles'
 
 type Props = {
   trocaTema: () => void
 }
 
-const Header = (props: Props) => {
-  // Função para scrollar até a penúltima seção (id="projetos")
-  const { lang, toggleLang } = useLanguage()
-
-  const scrollToProjetos = (
-    e: React.MouseEvent<HTMLAnchorElement, MouseEvent>
-  ) => {
-    e.preventDefault()
-    const section = document.getElementById('projetos')
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth' })
-    }
+const Header = (_props: Props) => {
+  const scrollTo = (id: string) => {
+    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
   }
 
   return (
-    <div>
-      <Navbar>
-        <Ul>
-          <Li>
-            <Links></Links>
-            <Links></Links>
-          </Li>
-        </Ul>
-      </Navbar>
-    </div>
+    <Navbar>
+      <Brand onClick={() => scrollTo('inicio')}>
+        denis<span>.dev</span>
+      </Brand>
+
+      <Ul>
+        <Li>
+          <Links type="button" onClick={() => scrollTo('projetos')}>
+            Projetos
+          </Links>
+          <Links type="button" onClick={() => scrollTo('experiencia')}>
+            Experiência
+          </Links>
+          <Links type="button" onClick={() => scrollTo('skills')}>
+            Stack
+          </Links>
+        </Li>
+      </Ul>
+
+      <BottonCV>
+        <a href="mailto:denisdev3loper@gmail.com">Falar comigo</a>
+      </BottonCV>
+    </Navbar>
   )
 }
 
